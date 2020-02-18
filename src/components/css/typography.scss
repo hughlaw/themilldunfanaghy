@@ -1,0 +1,57 @@
+@import './variables';
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size:62.5%
+}
+
+body {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  margin: 0.75em 0;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, p, .restricted-width {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text--with-margin-top {
+  margin-top: $spacing*2;
+}
+
+.heading--centered {
+  text-align: center;
+}
+
+.link--unstyled {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  text-transform: uppercase;
+  font: bold 1.4rem 'Montserrat', sans-serif;
+}
