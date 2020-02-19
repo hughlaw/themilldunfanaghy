@@ -12,12 +12,35 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "sections"
-    label: "Sections"
+  - label: "Sections"
+    name: "sections"
     files:
       - label: "Introduction"
         name: "introduction"
         file: "src/sections/intro.md"
         fields:
           - {label: Introduction, name: body, widget: markdown}
-          - {label: Hugh, name: hugh, widget: text}
+
+      - label: "Rooms"
+        name: "rooms"
+        file: "src/sections/rooms.md"
+        fields:
+          - {label: Title, name: title, widget: string }
+          - {label: Body, name: body, widget: markdown }
+
+      - label: "Food & Drink"
+        name: "foodanddrink"
+        file: "src/sections/foodanddrink.md"
+        fields:
+          - {label: Title, name: title, widget: string }
+          - {label: Opening text, name: openingText, widget: text }
+          - {label: Divider text 1, name: dividerText1, widget: text }
+          - {label: Divider text 2, name: dividerText2, widget: text }
+
+      - label: "Experiences"
+        name: "experiences"
+        file: "src/sections/experiences.md"
+        fields:
+          - {label: Title, name: title, widget: string }
+          - {label: Opening text, name: openingText, widget: text }
+          - {label: Secondary text, name: body, widget: markdown }

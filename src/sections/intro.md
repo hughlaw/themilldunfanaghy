@@ -1,3 +1,6 @@
+---
+templateKey: introduction
+---
 The Mill has reached a new chapter in 2020, offering the best place to stay if you want to bridge the gap between a large hotel and a B&B.
 
 A home from home, we offer seven individual rooms that range from cosy to cavernous.
