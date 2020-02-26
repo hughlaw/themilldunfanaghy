@@ -1,52 +1,35 @@
 import React from "react"
 import {StaticQuery, graphql} from 'gatsby'
+import Image from 'gatsby-image';
 
 const FoodAndDrink = ({ data }) => (
   <section id="food-and-drink">
-    <h1>{data.markdownRemark.frontmatter.title}</h1>
-    <p>{data.markdownRemark.frontmatter.openingText}</p>
+    <h1>{data.pageContent.frontmatter.title}</h1>
+    <p>{data.pageContent.frontmatter.openingText}</p>
 
     <div className="divider">
-      <img src="./media/images/healthy-breakfast-small.jpg"
-        sizes="100vw"
-        srcSet="./media/images/healthy-breakfast-small@2x.jpg 750w,
-                ./media/images/healthy-breakfast-small.jpg 375w,
-                ./media/images/healthy-breakfast-medium@2x.jpg 1668w,
-                ./media/images/healthy-breakfast-medium.jpg 834w,
-                ./media/images/healthy-breakfast-large@2x.jpg 2880w,
-                ./media/images/healthy-breakfast-large.jpg 1440w"
-        alt="Fruit salad with natural yogurt"
-        className="divider__image" />
+      <Image
+        fluid={data.healthyBreakfast.childImageSharp.fluid}
+        className="divider__image"
+        alt="Fruit salad with natural yogurt"/>
     </div>
 
-    <p>{data.markdownRemark.frontmatter.dividerText1}</p>
+    <p>{data.pageContent.frontmatter.dividerText1}</p>
 
     <div className="divider">
-      <img src="./media/images/fried-breakfast-small.jpg"
-        sizes="100vw"
-        srcSet="./media/images/fried-breakfast-small@2x.jpg 750w,
-                ./media/images/fried-breakfast-small.jpg 375w,
-                ./media/images/fried-breakfast-medium@2x.jpg 1668w,
-                ./media/images/fried-breakfast-medium.jpg 834w,
-                ./media/images/fried-breakfast-large@2x.jpg 2880w,
-                ./media/images/fried-breakfast-large.jpg 1440w"
-        alt="Full Irish breakfast"
-        className="divider__image" />
+      <Image
+        fluid={data.friedBreakfast.childImageSharp.fluid}
+        className="divider__image"
+        alt="Full Irish breakfast"/>
     </div>
 
-    <p>{data.markdownRemark.frontmatter.dividerText2}</p>
+    <p>{data.pageContent.frontmatter.dividerText2}</p>
 
     <div className="divider">
-      <img src="./media/images/prosseco-and-olives-small.jpg"
-        sizes="100vw"
-        srcSet="./media/images/prosseco-and-olives-small@2x.jpg 750w,
-                ./media/images/prosseco-and-olives-small.jpg 375w,
-                ./media/images/prosseco-and-olives-medium@2x.jpg 1668w,
-                ./media/images/prosseco-and-olives-medium.jpg 834w,
-                ./media/images/prosseco-and-olives-large@2x.jpg 2880w,
-                ./media/images/prosseco-and-olives-large.jpg 1440w"
-        alt="Prosecco and olives with cheese and cold meats"
-        className="divider__image" />
+      <Image
+        fluid={data.prossecoAndOlives.childImageSharp.fluid}
+        className="divider__image"
+        alt="Prosecco and olives with cheese and cold meats"/>
     </div>
 
     <h2 className="heading--centered">Breakfast menu</h2>
@@ -113,12 +96,33 @@ export default props => (
   <StaticQuery
     query={graphql`
       {
-        markdownRemark(frontmatter: {templateKey: {eq: "foodanddrink"}}) {
+        pageContent: markdownRemark(frontmatter: {templateKey: {eq: "foodanddrink"}}) {
           frontmatter {
             title
             openingText
             dividerText1
             dividerText2
+          }
+        }
+        healthyBreakfast: file(relativePath: {eq: "healthy-breakfast-large@2x.jpg"}) {
+          childImageSharp {
+            fluid(quality: 80, webpQuality: 80) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        friedBreakfast: file(relativePath: {eq: "fried-breakfast-large@2x.jpg"}) {
+          childImageSharp {
+            fluid(quality: 80, webpQuality: 80) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        prossecoAndOlives: file(relativePath: {eq: "prosseco-and-olives-large@2x.jpg"}) {
+          childImageSharp {
+            fluid(quality: 80, webpQuality: 80) {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }

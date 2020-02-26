@@ -1,67 +1,127 @@
 import PropTypes from "prop-types"
 import React from "react"
+import {throttle, delay} from 'lodash';
 
-const Navigation = () => (
-  <nav className="navigation">
-    <div className="navigation__bg"></div>
+class Navigation extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleScroll = throttle(this.checkMenuVisibility, 500);
+  }
 
-    <button className="hamburger hamburger--spin" type="button" aria-label="Menu">
-      <span className="hamburger-box">
-        <span className="hamburger-inner"></span>
-      </span>
-    </button>
+  initMenu() {
+    window.addEventListener('scroll', this.handleScroll, { passive: true });
+    // this.initMenuItems();
+  }
 
-    <div className="navigation__panel">
+  // initMenuItems() {
+  //   const menu_links = document.querySelectorAll('.navigation__item');
+  //   menu_links.forEach(link => {
+  //     link.addEventListener('click', this.onToggleMenu);
+  //   })
+  // }
 
-      <ul className="navigation__link-block">
-        <li className="navigation__item">
-          <a className="navigation__link link--unstyled" href="#rooms">Our rooms</a>
-        </li>
-        <li className="navigation__item">
-          <a className="navigation__link link--unstyled" href="#food-and-drink">Food & drink</a>
-        </li>
-        <li className="navigation__item">
-          <a className="navigation__link link--unstyled" href="#experiences">Experiences</a>
-        </li>
-        <li className="navigation__item">
-          <a className="navigation__link link--unstyled" href="#about-us">About us</a>
-        </li>
-      </ul>
+  onToggleMenu(e) {
+    const isSmallScreen = window.innerWidth < 700;
+    const menuButton = document.querySelector(`.hamburger`);
+    const navigation = document.querySelector(`.navigation`);
+    const nav_panel  = document.querySelector(`.navigation__panel`);
 
-      <button type="button" className="button navigation__book-button">Book a room</button>
+    if (isSmallScreen) {
+      menuButton.classList.toggle('is-active');
+      navigation.classList.toggle('is-active');
+      nav_panel.classList.toggle('is-active');
+    }
 
-      <div className="navigation__contact-details">
-        <address className="address">
-          The Mill<br />
-          Dunfanaghy<br />
-          Co. Donegal<br />
-          Ireland<br />
+    if (e.target.classList.contains('navigation__link')) {
+      delay(() => {
+        window.scrollTo({
+          top: window.scrollY - 60,
+          behavior: 'smooth'
+        })
+      }, 1);
+    }
+  }
 
-          <a href="tel://+353749136985" className="footer__link--block link--unstyled text--with-margin-top">+353 (0)74 913 6985</a>
-          <a href="mailto:info@themilldunfanaghy.com" className="footer__link--block link--unstyled">info@themilldunfanaghy.com</a>
-        </address>
+  checkMenuVisibility = (e) => {
+      const viewport_height = window.innerHeight;
+      const scroll_length   = window.scrollY;
+      const nav_bg          = document.querySelector('.navigation__bg');
 
-        <div className="social">
-          <a href="https://www.facebook.com/themilldunfanaghy/" target="_blank" rel="noopener noreferrer" className="social__icon" aria-label="The Mill on Facebook">
-            <picture>
-              <source srcSet="./media/images/facebook.svg 25w" />
-              <img src="./media/images/facebook@2x.png" width="25" height="25" alt="facebook icon" />
-            </picture>
-          </a>
-          <a href="https://www.instagram.com/themilldunfanaghy/" target="_blank" rel="noopener noreferrer" className="social__icon" aria-label="The Mill on Instagram">
-            <picture>
-              <source srcSet="./media/images/instagram.svg 25w" />
-              <img src="./media/images/instagram@2x.png" width="25" height="25" alt="Instagram icon" />
-            </picture>
-          </a>
+      if (scroll_length > viewport_height) {
+        nav_bg.classList.add('is-active');
+      } else {
+        nav_bg.classList.remove('is-active');
+      }
+  }
+
+  componentDidMount() {
+    this.initMenu();
+  }
+
+  render() {
+    return (
+      <nav className="navigation">
+        <div className="navigation__bg"></div>
+
+        <button className="hamburger hamburger--spin" type="button" aria-label="Menu" onClick={this.onToggleMenu}>
+          <span className="hamburger-box">
+            <span className="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <div className="navigation__panel">
+
+          <ul className="navigation__link-block">
+            <li className="navigation__item">
+              <a className="navigation__link link--unstyled" href="#rooms" onClick={this.onToggleMenu}>Our rooms</a>
+            </li>
+            <li className="navigation__item">
+              <a className="navigation__link link--unstyled" href="#food-and-drink" onClick={this.onToggleMenu}>Food & drink</a>
+            </li>
+            <li className="navigation__item">
+              <a className="navigation__link link--unstyled" href="#experiences" onClick={this.onToggleMenu}>Experiences</a>
+            </li>
+            <li className="navigation__item">
+              <a className="navigation__link link--unstyled" href="#about-us" onClick={this.onToggleMenu}>About us</a>
+            </li>
+          </ul>
+
+          <button type="button" className="button navigation__book-button">Book a room</button>
+
+          <div className="navigation__contact-details">
+            <address className="address">
+              The Mill<br />
+              Dunfanaghy<br />
+              Co. Donegal<br />
+              Ireland<br />
+
+              <a href="tel://+353749136985" className="footer__link--block link--unstyled text--with-margin-top">+353 (0)74 913 6985</a>
+              <a href="mailto:info@themilldunfanaghy.com" className="footer__link--block link--unstyled">info@themilldunfanaghy.com</a>
+            </address>
+
+            <div className="social">
+              <a href="https://www.facebook.com/themilldunfanaghy/" target="_blank" rel="noopener noreferrer" className="social__icon" aria-label="The Mill on Facebook">
+                <picture>
+                  <source srcSet="./media/images/facebook.svg 25w" />
+                  <img src="./media/images/facebook@2x.png" width="25" height="25" alt="facebook icon" />
+                </picture>
+              </a>
+              <a href="https://www.instagram.com/themilldunfanaghy/" target="_blank" rel="noopener noreferrer" className="social__icon" aria-label="The Mill on Instagram">
+                <picture>
+                  <source srcSet="./media/images/instagram.svg 25w" />
+                  <img src="./media/images/instagram@2x.png" width="25" height="25" alt="Instagram icon" />
+                </picture>
+              </a>
+            </div>
+
+          </div>
+
         </div>
 
-      </div>
-
-    </div>
-
-  </nav>
-)
+      </nav>
+    )
+  }
+}
 
 Navigation.propTypes = {
   siteTitle: PropTypes.string,

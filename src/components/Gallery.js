@@ -1,67 +1,105 @@
 import React from "react"
+import {StaticQuery, graphql} from 'gatsby'
+import Image from 'gatsby-image'
+import Siema from 'siema';
+import prevIconSvg from '../img/slideshow/prev-arrow.svg';
+import prevIconPng from '../img/slideshow/prev-arrow@2x.png';
+import nextIconSvg from '../img/slideshow/next-arrow.svg';
+import nextIconPng from '../img/slideshow/next-arrow@2x.png';
 
-const Gallery = () => (
-  <section id="gallery" className="gallery no-padding">
-    <button className="gallery__button gallery__button-prev" aria-label="Previous image">
-      <picture>
-        <source srcSet="./media/images/slideshow/prev-arrow.svg" />
-        <img src="./media/images/slideshow/prev-arrow@2x.png" alt="previous slide" />
-      </picture>
-    </button>
+class Gallery extends React.Component {
 
-    <button className="gallery__button gallery__button-next" aria-label="Next image">
-      <picture>
-        <source srcSet="./media/images/slideshow/next-arrow.svg" />
-        <img src="./media/images/slideshow/next-arrow@2x.png" alt="next slide" />
-      </picture>
-    </button>
+  componentDidMount() {
+    this.slideshow = new Siema({
+      duration: 300,
+      easing: 'ease-in-out',
+      loop: true
+    });
+  }
 
-    <div className="siema">
-      <img src="./media/images/slideshow/dogs-on-the-beach-small.jpg"
-        sizes="100vw"
-        srcSet="./media/images/slideshow/dogs-on-the-beach-small.jpg 375w,
-                ./media/images/slideshow/dogs-on-the-beach-small@2x.jpg 750w,
-                ./media/images/slideshow/dogs-on-the-beach-medium.jpg 834w,
-                ./media/images/slideshow/dogs-on-the-beach-medium@2x.jpg 1668w,
-                ./media/images/slideshow/dogs-on-the-beach-large.jpg 1440w,
-                ./media/images/slideshow/dogs-on-the-beach-large@2x.jpg 2880w"
-        alt="Two happy dogs on the beach"
-        className="siema__image" />
+  onNavigateSlideshow = (direction) => {
+    this.slideshow[direction]()
+  }
 
-      <img src="./media/images/slideshow/muckish-in-the-winter-small.jpg"
-        sizes="100vw"
-        srcSet="./media/images/slideshow/muckish-in-the-winter-small.jpg 375w,
-                ./media/images/slideshow/muckish-in-the-winter-small@2x.jpg 750w,
-                ./media/images/slideshow/muckish-in-the-winter-medium.jpg 834w,
-                ./media/images/slideshow/muckish-in-the-winter-medium@2x.jpg 1668w,
-                ./media/images/slideshow/muckish-in-the-winter-large.jpg 1440w,
-                ./media/images/slideshow/muckish-in-the-winter-large@2x.jpg 2880w"
-        alt="winter scene with Muckish mountain in the background"
-        className="siema__image" />
+  render() {
+    return (
+      <section id="gallery" className="gallery no-padding">
+        <button className="gallery__button gallery__button-prev" aria-label="Previous image" onClick={() => this.onNavigateSlideshow('prev')}>
+          <picture>
+            <source srcSet={prevIconSvg} />
+            <img src={prevIconPng} alt="previous slide" />
+          </picture>
+        </button>
 
-      <img src="./media/images/slideshow/horses-on-the-beach-small.jpg"
-        sizes="100vw"
-        srcSet="./media/images/slideshow/horses-on-the-beach-small.jpg 375w,
-                ./media/images/slideshow/horses-on-the-beach-small@2x.jpg 750w,
-                ./media/images/slideshow/horses-on-the-beach-medium.jpg 834w,
-                ./media/images/slideshow/horses-on-the-beach-medium@2x.jpg 1668w,
-                ./media/images/slideshow/horses-on-the-beach-large.jpg 1440w,
-                ./media/images/slideshow/horses-on-the-beach-large@2x.jpg 2880w"
-        alt="winter scene with Muckish mountain in the background"
-        className="siema__image" />
+        <button className="gallery__button gallery__button-next" aria-label="Next image" onClick={() => this.onNavigateSlideshow('next')}>
+        <picture>
+            <source srcSet={nextIconSvg} />
+            <img src={nextIconPng} alt="next slide" />
+          </picture>
+        </button>
 
-      <img src="./media/images/slideshow/new-lake-at-sunset-small.jpg"
-        sizes="100vw"
-        srcSet="./media/images/slideshow/new-lake-at-sunset-small.jpg 375w,
-                ./media/images/slideshow/new-lake-at-sunset-small@2x.jpg 750w,
-                ./media/images/slideshow/new-lake-at-sunset-medium.jpg 834w,
-                ./media/images/slideshow/new-lake-at-sunset-medium@2x.jpg 1668w,
-                ./media/images/slideshow/new-lake-at-sunset-large.jpg 1440w,
-                ./media/images/slideshow/new-lake-at-sunset-large@2x.jpg 2880w"
-        alt="winter scene with Muckish mountain in the background"
-        className="siema__image" />
-    </div>
+        <div className="siema">
 
-  </section>
+          <Image
+            fluid={this.props.data.dogsOnTheBeach.childImageSharp.fluid}
+            className="siema__image"
+            alt="Two happy dogs on the beach"/>
+
+          <Image
+            fluid={this.props.data.muckishInWinter.childImageSharp.fluid}
+            className="siema__image"
+            alt="Winter scene with Muckish mountain in the background"/>
+
+          <Image
+            fluid={this.props.data.horsesOnTheBeach.childImageSharp.fluid}
+            className="siema__image"
+            alt="Horses running on a beach"/>
+
+          <Image
+            fluid={this.props.data.newLakeSunset.childImageSharp.fluid}
+            className="siema__image"
+            alt="Sunset scene at new lake"/>
+
+        </div>
+      </section>
+    )
+  }
+}
+
+export default props => (
+  <StaticQuery
+    query={graphql`
+      {
+        dogsOnTheBeach: file(relativePath: {eq: "slideshow/dogs-on-the-beach-large@2x.jpg"}) {
+          childImageSharp {
+            fluid(quality: 80, webpQuality: 80) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        muckishInWinter: file(relativePath: {eq: "slideshow/muckish-in-the-winter-large@2x.jpg"}) {
+          childImageSharp {
+            fluid(quality: 80, webpQuality: 80) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        horsesOnTheBeach: file(relativePath: {eq: "slideshow/horses-on-the-beach-large@2x.jpg"}) {
+          childImageSharp {
+            fluid(quality: 80, webpQuality: 80) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        newLakeSunset: file(relativePath: {eq: "slideshow/new-lake-at-sunset-large@2x.jpg"}) {
+          childImageSharp {
+            fluid(quality: 80, webpQuality: 80) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `}
+    render={data => <Gallery data={data} {...props} />}
+  ></StaticQuery>
 )
-export default Gallery

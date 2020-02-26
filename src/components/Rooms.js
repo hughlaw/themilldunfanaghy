@@ -1,48 +1,22 @@
 import React from "react";
 import {StaticQuery, graphql} from 'gatsby'
+import Image from 'gatsby-image'
+import Room from './Room';
 
 const Rooms = ({ data }) => (
   <section id="rooms">
-    <h1>{data.markdownRemark.frontmatter.title}</h1>
-    <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}></div>
-
     <div className="divider">
-      <img src="./media/images/new-lake-in-the-mist-small.jpg"
-        sizes="100vw"
-        srcSet="./media/images/new-lake-in-the-mist-small@2x.jpg 750w,
-                ./media/images/new-lake-in-the-mist-small.jpg 375w,
-                ./media/images/new-lake-in-the-mist-medium@2x.jpg 1668w,
-                ./media/images/new-lake-in-the-mist-medium.jpg 834w,
-                ./media/images/new-lake-in-the-mist-large@2x.jpg 2880w,
-                ./media/images/new-lake-in-the-mist-large.jpg 1440w"
-        alt="Misty view of new lake at sun rise"
-        className="divider__image" />
+      <Image
+        fluid={data.newLake.childImageSharp.fluid}
+        className="divider__image"
+        alt="Misty view of new lake at sun rise"/>
     </div>
-
+    <h1>{data.pageContent.frontmatter.title}</h1>
+    <div dangerouslySetInnerHTML={{ __html: data.pageContent.html }}></div>
 
     <div className="grid room-grid restricted-width">
 
-      <div className="card">
-        <img src="./media/images/studio.jpg"
-          sizes="100%"
-          srcSet="./media/images/studio@2x.jpg 670w,
-                  ./media/images/studio.jpg 335w"
-          alt="interior of the Studio room"
-          className="card__image" />
-        <div className="card__text">
-          <h2>The Studio</h2>
-          <ul className="card__text--no-bullets">
-            <li>396 sq feet</li>
-            <li>Kingsize Four poster bed</li>
-            <li>Roll top bath in bedroom</li>
-            <li>Power shower</li>
-            <li>Nepresso Coffee machine</li>
-            <li>Overlooking drive and garden</li>
-            <li>Sitting Area</li>
-          </ul>
-          <span className="card__text--with-margin">From €80 per person</span>
-        </div>
-      </div>
+      <Room />
 
       <div className="card">
         <img src="./media/images/figart.jpg"
@@ -172,10 +146,17 @@ export default props => (
   <StaticQuery
     query={graphql`
       {
-        markdownRemark(frontmatter: {templateKey: {eq: "rooms"}}) {
+        pageContent: markdownRemark(frontmatter: {templateKey: {eq: "rooms"}}) {
           html
           frontmatter {
             title
+          }
+        }
+        newLake: file(relativePath: {eq: "new-lake-in-the-mist-large@2x.jpg"}) {
+          childImageSharp {
+            fluid(quality: 80, webpQuality: 80) {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
