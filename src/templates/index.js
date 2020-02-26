@@ -1,7 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import {graphql} from 'gatsby'
-
 import Layout from '../components/Layout'
 import Navigation from '../components/Navigation';
 import Introduction from '../components/Introduction';
@@ -11,16 +8,7 @@ import Experiences from '../components/Experiences';
 import Gallery from '../components/Gallery';
 import AboutUs from '../components/AboutUs';
 
-export const IndexPageTemplate = ({
-  image,
-  title,
-  introduction,
-  heading,
-  subheading,
-  mainpitch,
-  description,
-  intro,
-}) => (
+export const IndexPageTemplate = () => (
   <div>
     <Navigation />
 
@@ -67,54 +55,10 @@ export const IndexPageTemplate = ({
   </div>
 )
 
-IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
-}
-
-const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
-
-  return (
-    <Layout>
-      <IndexPageTemplate
-        introduction={frontmatter.introduction}
-      />
-    </Layout>
-  )
-}
-
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
-}
+const IndexPage = () => (
+  <Layout>
+    <IndexPageTemplate />
+  </Layout>
+)
 
 export default IndexPage
-
-export const pageQuery = graphql`
-  query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index" } }) {
-      frontmatter {
-        introduction
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-
-  }
-`
