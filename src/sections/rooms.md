@@ -1,6 +1,16 @@
 ---
-templateKey: rooms
 title: Our rooms
+roomInfo:
+  - roomHighlights:
+      - 396 sq feet
+      - Kingsize four poster bed
+      - Roll top bath in bedroom
+      - Power shower
+      - Nespresso coffee machine
+      - Overlooking drive and garden
+      - Sitting area
+    roomImage: /img/studio@2x.jpg
+    roomName: The Studio
 ---
 Our rooms at The Mill are named after our local townlands with the exception of The Studio, which was Susan's grandfather, Frank Egginton's painting studio.
 
