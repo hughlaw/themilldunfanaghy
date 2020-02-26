@@ -25,8 +25,22 @@ collections:
         name: "rooms"
         file: "src/sections/rooms.md"
         fields:
-          - {label: Title, name: title, widget: string }
-          - {label: Body, name: body, widget: markdown }
+          - label: Title
+            name: title
+            widget: string
+          - label: Body
+            name: body
+            widget: markdown
+          - label: 'Room information'
+            name: roomInfo
+            widget: list
+            fields:
+              - {label: Image, name: roomImage, widget: image}
+              - {label: 'Room name', name: roomName, widget: string}
+              - label: 'Room highlights'
+                name: roomHighlights
+                widget: list
+                field: {label: Highlight, name: highlight, widget: string}
 
       - label: "Food & Drink"
         name: "foodanddrink"
