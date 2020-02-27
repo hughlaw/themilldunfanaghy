@@ -10,7 +10,6 @@ const Rooms = ({ data }) => {
     );
 
     const altTextForImage = `Interior of ${room.roomName}`;
-    // const soText = room.soText ? (<br />${room.soText}):``;
 
     let priceText;
     if (room.soText) {

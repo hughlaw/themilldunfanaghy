@@ -1,6 +1,8 @@
 import PropTypes from "prop-types"
 import React from "react"
 import {throttle, delay} from 'lodash';
+import facebook from '../img/facebook.svg';
+import instagram from '../img/instagram.svg';
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -10,15 +12,7 @@ class Navigation extends React.Component {
 
   initMenu() {
     window.addEventListener('scroll', this.handleScroll, { passive: true });
-    // this.initMenuItems();
   }
-
-  // initMenuItems() {
-  //   const menu_links = document.querySelectorAll('.navigation__item');
-  //   menu_links.forEach(link => {
-  //     link.addEventListener('click', this.onToggleMenu);
-  //   })
-  // }
 
   onToggleMenu(e) {
     const isSmallScreen = window.innerWidth < 700;
@@ -102,14 +96,12 @@ class Navigation extends React.Component {
             <div className="social">
               <a href="https://www.facebook.com/themilldunfanaghy/" target="_blank" rel="noopener noreferrer" className="social__icon" aria-label="The Mill on Facebook">
                 <picture>
-                  <source srcSet="./media/images/facebook.svg 25w" />
-                  <img src="./media/images/facebook@2x.png" width="25" height="25" alt="facebook icon" />
+                  <img src={facebook} width="25" height="25" alt="facebook icon" />
                 </picture>
               </a>
               <a href="https://www.instagram.com/themilldunfanaghy/" target="_blank" rel="noopener noreferrer" className="social__icon" aria-label="The Mill on Instagram">
                 <picture>
-                  <source srcSet="./media/images/instagram.svg 25w" />
-                  <img src="./media/images/instagram@2x.png" width="25" height="25" alt="Instagram icon" />
+                  <img src={instagram} width="25" height="25" alt="Instagram icon" />
                 </picture>
               </a>
             </div>

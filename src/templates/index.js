@@ -1,5 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import WebFont from 'webfontloader';
+
 import Navigation from '../components/Navigation';
 import Introduction from '../components/Introduction';
 import Rooms from '../components/Rooms';
@@ -7,6 +9,16 @@ import FoodAndDrink from '../components/FoodAndDrink';
 import Experiences from '../components/Experiences';
 import Gallery from '../components/Gallery';
 import AboutUs from '../components/AboutUs';
+
+import facebook from '../img/facebook.svg';
+import instagram from '../img/instagram.svg';
+
+
+WebFont.load({
+  google: {
+    families: ['Montserrat', 'Playfair Display', 'sans-serif']
+  }
+});
 
 export const IndexPageTemplate = () => (
   <div>
@@ -38,14 +50,12 @@ export const IndexPageTemplate = () => (
       <div className="social">
         <a href="https://www.facebook.com/themilldunfanaghy/" target="_blank" rel="noopener noreferrer" className="social__icon" aria-label="The Mill on Facebook">
           <picture>
-            <source srcSet="./media/images/facebook.svg 25w" />
-            <img src="./media/images/facebook@2x.png" width="25" height="25" alt="facebook icon" />
+            <img src={facebook} width="25" height="25" alt="facebook icon" />
           </picture>
         </a>
         <a href="https://www.instagram.com/themilldunfanaghy/" target="_blank" rel="noopener noreferrer" className="social__icon" aria-label="The Mill on Instagram">
           <picture>
-            <source srcSet="./media/images/instagram.svg 25w" />
-            <img src="./media/images/instagram@2x.png" width="25" height="25" alt="Instagram icon" />
+            <img src={instagram} width="25" height="25" alt="Instagram icon" />
           </picture>
         </a>
       </div>

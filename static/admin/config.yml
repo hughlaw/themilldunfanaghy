@@ -32,6 +32,7 @@ collections:
             name: body
             widget: markdown
           - label: 'Room information'
+            allow_add: false
             name: roomInfo
             widget: list
             fields:
@@ -52,6 +53,12 @@ collections:
           - {label: Opening text, name: openingText, widget: text }
           - {label: Divider text 1, name: dividerText1, widget: text }
           - {label: Divider text 2, name: dividerText2, widget: text }
+          - label: Menu
+            name: menu
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: string}
 
       - label: "Experiences"
         name: "experiences"
