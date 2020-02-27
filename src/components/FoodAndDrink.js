@@ -4,7 +4,7 @@ import Image from 'gatsby-image';
 
 const FoodAndDrink = ({ data }) => {
 
-  const menu = data.pageContent.frontmatter.menu.map((menuItem, i) => {
+  const menu = data.pageContent.frontmatter.menuItems.map((menuItem, i) => {
     let description;
     if (menuItem.description) {
       description = (<span className="menu-item__desc">{menuItem.description}</span>)
@@ -67,7 +67,7 @@ export default props => (
             openingText
             dividerText1
             dividerText2
-            menu {
+            menuItems {
               title
               description
             }

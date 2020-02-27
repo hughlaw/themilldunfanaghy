@@ -1,7 +1,7 @@
 ---
 templateKey: foodanddrink
 title: Food & drink
-menu:
+menuItems:
   - title: Full Irish Breakfast
     description: Burrowe’s Pork Sausages & Home Cured Bacon, Free Range Fried Egg, Potato Bread, Tomato, Loughrane’s Black/White Pudding & Mushrooms.
   - title: Organic Porridge

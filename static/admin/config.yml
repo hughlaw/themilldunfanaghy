@@ -53,8 +53,8 @@ collections:
           - {label: Opening text, name: openingText, widget: text }
           - {label: Divider text 1, name: dividerText1, widget: text }
           - {label: Divider text 2, name: dividerText2, widget: text }
-          - label: Menu
-            name: menu
+          - label: 'Menu items'
+            name: menuItems
             widget: list
             fields:
               - {label: Title, name: title, widget: string}
