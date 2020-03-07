@@ -14,64 +14,64 @@ public_folder: /img
 collections:
   - label: "Pages"
     name: "pages"
-    folder: "src/pages"
-    create: false
-    fields:
-      - label: "Introduction"
-        name: "introduction"
-        widget: object
+    files:
+      - file: "src/pages/index.md"
         fields:
-          - {label: Introduction, name: introduction, widget: markdown}
-
-      - label: "Rooms"
-        name: "rooms"
-        widget: object
-        fields:
-          - label: Title
-            name: title
-            widget: string
-          - label: Introductory text
-            name: intro1
-            widget: markdown
-          - label: Introductory text
-            name: intro2
-            widget: markdown
-          - label: 'Room information'
-            allow_add: false
-            name: roomInfo
-            widget: list
+          - label: "Introduction"
+            name: "introduction"
+            widget: object
             fields:
-              - {label: 'Room name', name: roomName, widget: string}
-              - {label: Image, name: roomImage, widget: image}
-              - label: 'Room highlights'
-                name: roomHighlights
+              - {label: Introduction, name: introduction, widget: markdown}
+
+          - label: "Rooms"
+            name: "rooms"
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Introductory text
+                name: intro1
+                widget: markdown
+              - label: Introductory text
+                name: intro2
+                widget: markdown
+              - label: 'Room information'
+                allow_add: false
+                name: roomInfo
                 widget: list
-                field: {label: Highlight, name: highlight, widget: string}
-              - {label: Price, name: price, widget: string}
-              - {label: Single Occupancy, name: soText, widget: string}
+                fields:
+                  - {label: 'Room name', name: roomName, widget: string}
+                  - {label: Image, name: roomImage, widget: image}
+                  - label: 'Room highlights'
+                    name: roomHighlights
+                    widget: list
+                    field: {label: Highlight, name: highlight, widget: string}
+                  - {label: Price, name: price, widget: string}
+                  - {label: Single Occupancy, name: soText, widget: string}
 
-      - label: "Food & Drink"
-        name: foodAndDrink
-        widget: object
-        fields:
-          - {label: Title, name: title, widget: string }
-          - {label: Text, name: openingText, widget: markdown }
-          - {label: Text, name: dividerText1, widget: markdown }
-          - {label: Text, name: dividerText2, widget: markdown }
-          - label: 'Menu items'
-            name: menuItems
-            widget: list
+          - label: "Food & Drink"
+            name: foodAndDrink
+            widget: object
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Description, name: description, widget: string}
+              - {label: Title, name: title, widget: string }
+              - {label: Text, name: openingText, widget: markdown }
+              - {label: Text, name: dividerText1, widget: markdown }
+              - {label: Text, name: dividerText2, widget: markdown }
+              - label: 'Menu items'
+                name: menuItems
+                widget: list
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Description, name: description, widget: string}
 
-      - label: Experiences
-        name: experiences
-        widget: object
-        fields:
-          - {label: Title, name: title, widget: string }
-          - {label: Text, name: openingText, widget: markdown }
-          - {label: Text, name: secondaryText, widget: markdown }
+          - label: Experiences
+            name: experiences
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string }
+              - {label: Text, name: openingText, widget: markdown }
+              - {label: Text, name: secondaryText, widget: markdown }
 
 
   - label: "Sections"
