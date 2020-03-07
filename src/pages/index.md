@@ -11,6 +11,14 @@ rooms:
 
     ufiehwufihewuif
   intro2: fiwheuifheuwifhueiwf
+  roomInfo:
+    - price: some price text
+      roomHighlights:
+        - jifoewjifo
+        - jfieowjfio
+      roomImage: /img/studio@2x.jpg
+      roomName: room name
+      soText: 'single occup[ancy ytext'
   title: rooms title
 foodAndDrink:
   dividerText1: hufiewhufihewui
