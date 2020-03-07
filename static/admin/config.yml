@@ -32,6 +32,10 @@ collections:
               - {label: Text, name: introText, widget: markdown}
               - {label: Opening dates, name: openingDatesText, widget: string}
 
+          - label: Divider Image
+            name: divider1
+            widget: image
+
           - label: "Rooms"
             name: "rooms"
             widget: object
@@ -87,7 +91,7 @@ collections:
             widget: object
             fields:
               - {label: Title, name: title, widget: string }
-              - {label: Text, name: aboutUsText1, widget: markdown }
+              - {label: Text, name: aboutUsText, widget: markdown }
               - {label: Title, name: title2, widget: string }
               - {label: Text, name: aboutUsText2, widget: markdown }
 
