@@ -16,12 +16,21 @@ collections:
     name: "pages"
     files:
       - file: "src/pages/index.md"
+        name: homepage
+        label: Homepage
         fields:
+          - label: Page identier
+            name: pageIdentifier
+            widget: hidden
+          - label: Template key
+            name: templateKey
+            widget: hidden
           - label: "Introduction"
             name: "introduction"
             widget: object
             fields:
-              - {label: Introduction, name: introduction, widget: markdown}
+              - {label: Text, name: introText, widget: markdown}
+              - {label: Opening dates, name: openingDatesText, widget: string}
 
           - label: "Rooms"
             name: "rooms"
@@ -30,10 +39,10 @@ collections:
               - label: Title
                 name: title
                 widget: string
-              - label: Introductory text
+              - label:  Text
                 name: intro1
                 widget: markdown
-              - label: Introductory text
+              - label: Text
                 name: intro2
                 widget: markdown
               - label: 'Room information'
@@ -48,7 +57,7 @@ collections:
                     widget: list
                     field: {label: Highlight, name: highlight, widget: string}
                   - {label: Price, name: price, widget: string}
-                  - {label: Single Occupancy, name: soText, widget: string}
+                  - {label: Single occupancy text, name: soText, widget: string}
 
           - label: "Food & Drink"
             name: foodAndDrink
@@ -72,6 +81,15 @@ collections:
               - {label: Title, name: title, widget: string }
               - {label: Text, name: openingText, widget: markdown }
               - {label: Text, name: secondaryText, widget: markdown }
+
+          - label: About Us
+            name: aboutUs
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string }
+              - {label: Text, name: aboutUsText1, widget: markdown }
+              - {label: Title, name: title2, widget: string }
+              - {label: Text, name: aboutUsText2, widget: markdown }
 
 
   - label: "Sections"

@@ -8,7 +8,7 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
   {
-    allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "index"}}}) {
+    allMarkdownRemark(filter: {frontmatter: {pageIdentifier: {eq: "homepage"}}}) {
       edges {
         node {
           id

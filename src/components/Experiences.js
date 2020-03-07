@@ -4,8 +4,8 @@ import Image from 'gatsby-image'
 
 const Experiences = ({ data }) => (
   <section id="experiences">
-    <h1>{data.pageContent.frontmatter.title}</h1>
-    <p>{data.pageContent.frontmatter.openingText}</p>
+    <h1>{data.pageContent.frontmatter.experiences.title}</h1>
+    <p>{data.pageContent.frontmatter.experiences.openingText}</p>
 
     <div className="divider">
       <Image
@@ -13,9 +13,7 @@ const Experiences = ({ data }) => (
         className="divider__image"
         alt="Rowing boats moored at the side of the new lake on a warm summer's evening"/>
     </div>
-
-    <div dangerouslySetInnerHTML={{ __html: data.pageContent.html }}></div>
-
+    {data.pageContent.frontmatter.experiences.secondaryText}
   </section>
 )
 
@@ -23,12 +21,14 @@ export default props => (
   <StaticQuery
     query={graphql`
       {
-        pageContent: markdownRemark(frontmatter: {templateKey: {eq: "experiences"}}) {
+        pageContent: markdownRemark(frontmatter: {pageIdentifier: {eq: "homepage"}}) {
           frontmatter {
-            title
-            openingText
+            experiences {
+              openingText
+              secondaryText
+              title
+            }
           }
-          html
         }
         rowingBoats: file(relativePath: {eq: "boats-on-the-new-lake-large@2x.jpg"}) {
           childImageSharp {

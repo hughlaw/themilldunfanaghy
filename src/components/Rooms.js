@@ -3,7 +3,7 @@ import {StaticQuery, graphql} from 'gatsby'
 import Image from 'gatsby-image'
 
 const Rooms = ({ data }) => {
-  const rooms = data.pageContent.frontmatter.roomInfo.map((room) => {
+  const rooms = data.pageContent.frontmatter.rooms.roomInfo.map((room) => {
 
     const highlights = room.roomHighlights.map((highlight, i) =>
       <li key={i}>{highlight}</li>
@@ -61,22 +61,27 @@ export default props => (
   <StaticQuery
     query={graphql`
       {
-        pageContent: markdownRemark(frontmatter: {title: {eq: "Our rooms"}}) {
+        pageContent: markdownRemark(frontmatter: {pageIdentifier: {eq: "homepage"}}) {
           html
           frontmatter {
             title
-            roomInfo {
-              roomImage {
-                childImageSharp {
-                  fluid {
-                    ...GatsbyImageSharpFluid
+            rooms {
+              intro1
+              intro2
+              title
+              roomInfo {
+                price
+                roomHighlights
+                roomName
+                soText
+                roomImage {
+                  childImageSharp {
+                    fluid {
+                      ...GatsbyImageSharpFluid
+                    }
                   }
                 }
               }
-              roomName
-              price
-              soText
-              roomHighlights
             }
           }
         }

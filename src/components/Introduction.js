@@ -1,5 +1,6 @@
 import React from "react";
 import {StaticQuery, graphql} from 'gatsby'
+import BookButton from './BookButton'
 
 const Introduction = ({ data }) => (
   <section id="introduction">
@@ -11,14 +12,15 @@ const Introduction = ({ data }) => (
     </div>
     <h1 className="sr-only">Introduction</h1>
     <div className="grid intro-grid restricted-width">
-      <div className="grid__cell text--with-margin-top" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}>
+      <div className="grid__cell text--with-margin-top">
+        {data.markdownRemark.frontmatter.introduction.introText}
       </div>
 
       <div className="grid__cell">
-        <button type="button" className="button">Book a room</button>
+        <BookButton />
 
         <h2>Opening hours</h2>
-        <p>We are open from March until November.</p>
+        <p>{data.markdownRemark.frontmatter.introduction.openingDatesText}</p>
       </div>
     </div>
   </section>
@@ -28,8 +30,13 @@ export default props => (
   <StaticQuery
     query={graphql`
       {
-        markdownRemark(frontmatter: {templateKey: {eq: "introduction"}}) {
-          html
+        markdownRemark(frontmatter: {pageIdentifier: {eq: "homepage"}}) {
+          frontmatter {
+            introduction {
+              introText
+              openingDatesText
+            }
+          }
         }
       }
     `}

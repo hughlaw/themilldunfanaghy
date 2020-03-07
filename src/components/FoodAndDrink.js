@@ -1,10 +1,11 @@
 import React from "react"
 import {StaticQuery, graphql} from 'gatsby'
 import Image from 'gatsby-image';
+import BookButton from './BookButton'
 
 const FoodAndDrink = ({ data }) => {
 
-  const menu = data.pageContent.frontmatter.menuItems.map((menuItem, i) => {
+  const menu = data.pageContent.frontmatter.foodAndDrink.menuItems.map((menuItem, i) => {
     let description;
     if (menuItem.description) {
       description = (<span className="menu-item__desc">{menuItem.description}</span>)
@@ -19,8 +20,8 @@ const FoodAndDrink = ({ data }) => {
 
   return (
     <section id="food-and-drink">
-      <h1>{data.pageContent.frontmatter.title}</h1>
-      <p>{data.pageContent.frontmatter.openingText}</p>
+      <h1>{data.pageContent.frontmatter.foodAndDrink.title}</h1>
+      <p>{data.pageContent.frontmatter.foodAndDrink.openingText}</p>
 
       <div className="divider">
         <Image
@@ -29,7 +30,7 @@ const FoodAndDrink = ({ data }) => {
           alt="Fruit salad with natural yogurt"/>
       </div>
 
-      <p>{data.pageContent.frontmatter.dividerText1}</p>
+      <p>{data.pageContent.frontmatter.foodAndDrink.dividerText1}</p>
 
       <div className="divider">
         <Image
@@ -38,7 +39,7 @@ const FoodAndDrink = ({ data }) => {
           alt="Full Irish breakfast"/>
       </div>
 
-      <p>{data.pageContent.frontmatter.dividerText2}</p>
+      <p>{data.pageContent.frontmatter.foodAndDrink.dividerText2}</p>
 
       <div className="divider">
         <Image
@@ -51,7 +52,7 @@ const FoodAndDrink = ({ data }) => {
 
       {menu}
 
-      <button type="button" className="button">Book a room</button>
+      <BookButton />
 
     </section>
   )
@@ -61,15 +62,17 @@ export default props => (
   <StaticQuery
     query={graphql`
       {
-        pageContent: markdownRemark(frontmatter: {templateKey: {eq: "foodanddrink"}}) {
+        pageContent: markdownRemark(frontmatter: {pageIdentifier: {eq: "homepage"}}) {
           frontmatter {
-            title
-            openingText
-            dividerText1
-            dividerText2
-            menuItems {
+            foodAndDrink {
+              dividerText1
+              dividerText2
+              menuItems {
+                description
+                title
+              }
+              openingText
               title
-              description
             }
           }
         }

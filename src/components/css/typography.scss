@@ -10,6 +10,11 @@ body {
   line-height: 2rem;
 }
 
+section {
+  // account for white space in editable content from the CMS
+  white-space: pre-wrap;
+}
+
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
   text-transform: uppercase;

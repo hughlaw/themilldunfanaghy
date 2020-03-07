@@ -1,4 +1,6 @@
 ---
+templateKey: index
+pageIdentifier: homepage
 introduction:
   introText: |-
     The Mill has reached a new chapter in 2020, offering the best place to stay if you want to bridge the gap between a large hotel and a B&B.
@@ -6,6 +8,7 @@ introduction:
     A home from home, we offer seven individual rooms that range from cosy to cavernous.
 
     Start the day with our award winning breakfast, relax in our many lounge areas and with our extensive local knowledge, we can show you why we think this hidden corner of Donegal is the best place to be.
+  openingDatesText: We are open from March until November.
 rooms:
   intro1: |-
     Our rooms at The Mill are named after our local townlands with the exception of The Studio, which was Susan's grandfather, Frank Egginton's painting studio.
@@ -131,5 +134,22 @@ experiences:
 
     All of this on the Wild Atlantic Way.
   title: Experiences
+
+aboutUs:
+  aboutUsText: |-
+    Susan and Derek are no strangers to the hospitality world having spent 20 years creating and running their award winning restaurant with rooms. They have now turned their attention to providing a very special place to stay.
+
+    With so much on offer on our doorstep we hope you love this area as much as we do.
+
+  title2: The story of The Mill
+  aboutUsText2: |-
+    The Mill was bought in 1949 by Susan's Grandfather, Frant Egginton, a famous watercolour artist.
+
+    He converted the flax mill into his studio and home until his death in 1990.
+
+    Work began in 1999 to modernise and enlarge the house to accommodate a restaurant, 6 ensuite rooms and a living area. In 201another room,  The Studio, was added.
+
+    Our new chapter begins in 2020.
+  title: About us
 ---
 

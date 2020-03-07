@@ -3,6 +3,7 @@ import React from "react"
 import {throttle, delay} from 'lodash';
 import facebook from '../img/facebook.svg';
 import instagram from '../img/instagram.svg';
+import BookButton from './BookButton'
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -80,7 +81,7 @@ class Navigation extends React.Component {
             </li>
           </ul>
 
-          <button type="button" className="button navigation__book-button">Book a room</button>
+          <BookButton variant="navigation__book-button" />
 
           <div className="navigation__contact-details">
             <address className="address">
