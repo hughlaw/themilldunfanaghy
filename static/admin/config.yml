@@ -14,7 +14,8 @@ public_folder: /img
 collections:
   - label: "Pages"
     name: "pages"
-    files: "src/pages/index.md"
+    folder: "src/pages"
+    create: false
     fields:
       - label: "Introduction"
         name: "introduction"
