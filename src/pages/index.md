@@ -106,6 +106,9 @@ foodAndDrink:
     For a more hearty start to the day, a vast range that includes a Full Irish
     Breakfast, Vegetarian breakfast, Smoked salmon, Egg dishes and Fresh fish
     from The Bay can be ordered from the kitchen.
+  foodImage1: /img/healthy-breakfast-large@2x.jpg
+  foodImage2: /img/fried-breakfast-large@2x.jpg
+  foodImage3: /img/prosseco-and-olives-large@2x.jpg
   dividerText2: >-
     On a lovely Summer's evening, if you fancy a glass of Prosecco at one of our
     many romantic seating areas in the garden , we do have an Honesty Bar for to
@@ -152,6 +155,7 @@ experiences:
     From a relaxing afternoon browsing the many gift shops in town or cantering
     along the amazing Tramore beach, there are activities and experiences to
     suit everyone.
+  dividerExperiences: /img/boats-on-the-new-lake-large@2x.jpg
   secondaryText: >-
     With our local knowledge we can help you experience all the highlights that
     Dunfanaghy area has to offer including superb Blue Flag beaches, golf

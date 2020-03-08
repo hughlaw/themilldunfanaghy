@@ -266,6 +266,7 @@ button {
 }
 
 .grid {
+  margin: $spacing*2 0;
   display: grid;
   gap: $spacing*2;
 }

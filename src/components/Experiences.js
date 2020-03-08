@@ -9,7 +9,7 @@ const Experiences = ({ data }) => (
 
     <div className="divider">
       <Image
-        fluid={data.rowingBoats.childImageSharp.fluid}
+        fluid={data.pageContent.frontmatter.experiences.dividerExperiences.childImageSharp.fluid}
         className="divider__image"
         alt="Rowing boats moored at the side of the new lake on a warm summer's evening"/>
     </div>
@@ -25,15 +25,15 @@ export default props => (
           frontmatter {
             experiences {
               openingText
+              dividerExperiences {
+                childImageSharp {
+                  fluid(quality: 90, webpQuality: 90) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
               secondaryText
               title
-            }
-          }
-        }
-        rowingBoats: file(relativePath: {eq: "boats-on-the-new-lake-large@2x.jpg"}) {
-          childImageSharp {
-            fluid(quality: 80, webpQuality: 80) {
-              ...GatsbyImageSharpFluid
             }
           }
         }

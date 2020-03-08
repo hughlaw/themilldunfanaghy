@@ -38,14 +38,18 @@ const Rooms = ({ data }) => {
 
   return (
     <section id="rooms">
+      <h1>{data.pageContent.frontmatter.rooms.title}</h1>
+
+      {data.pageContent.frontmatter.rooms.intro1}
+
       <div className="divider">
         <Image
-          fluid={data.newLake.childImageSharp.fluid}
+          fluid={data.pageContent.frontmatter.divider1.childImageSharp.fluid}
           className="divider__image"
           alt="Misty view of new lake at sun rise"/>
       </div>
-      <h1>{data.pageContent.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: data.pageContent.html }}></div>
+
+      {data.pageContent.frontmatter.rooms.intro2}
 
       <div className="grid room-grid restricted-width">
         {rooms}
@@ -83,12 +87,12 @@ export default props => (
                 }
               }
             }
-          }
-        }
-        newLake: file(relativePath: {eq: "new-lake-in-the-mist-large@2x.jpg"}) {
-          childImageSharp {
-            fluid(quality: 80, webpQuality: 80) {
-              ...GatsbyImageSharpFluid
+            divider1 {
+              childImageSharp {
+                fluid(quality: 90, webpQuality: 80) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
           }
         }

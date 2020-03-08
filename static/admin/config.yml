@@ -46,9 +46,11 @@ collections:
               - label:  Text
                 name: intro1
                 widget: markdown
+                required: false
               - label: Text
                 name: intro2
                 widget: markdown
+                required: false
               - label: 'Room information'
                 allow_add: false
                 name: roomInfo
@@ -61,7 +63,7 @@ collections:
                     widget: list
                     field: {label: Highlight, name: highlight, widget: string}
                   - {label: Price, name: price, widget: string}
-                  - {label: Single occupancy text, name: soText, widget: string}
+                  - {label: Single occupancy text, name: soText, widget: string, required: false}
 
           - label: "Food & Drink"
             name: foodAndDrink
@@ -69,14 +71,17 @@ collections:
             fields:
               - {label: Title, name: title, widget: string }
               - {label: Text, name: openingText, widget: markdown }
+              - {label: Image, name: foodImage1, widget: image }
               - {label: Text, name: dividerText1, widget: markdown }
+              - {label: Image, name: foodImage2, widget: image }
               - {label: Text, name: dividerText2, widget: markdown }
+              - {label: Image, name: foodImage3, widget: image }
               - label: 'Menu items'
                 name: menuItems
                 widget: list
                 fields:
                   - {label: Title, name: title, widget: string}
-                  - {label: Description, name: description, widget: string}
+                  - {label: Description, name: description, widget: string, required: false}
 
           - label: Experiences
             name: experiences
@@ -84,6 +89,7 @@ collections:
             fields:
               - {label: Title, name: title, widget: string }
               - {label: Text, name: openingText, widget: markdown }
+              - {label: Image, name: dividerExperiences, widget: image }
               - {label: Text, name: secondaryText, widget: markdown }
 
           - label: About Us
@@ -94,60 +100,3 @@ collections:
               - {label: Text, name: aboutUsText, widget: markdown }
               - {label: Title, name: title2, widget: string }
               - {label: Text, name: aboutUsText2, widget: markdown }
-
-
-  - label: "Sections"
-    name: "sections"
-    files:
-      - label: "Introduction"
-        name: "introduction"
-        file: "src/sections/intro.md"
-        fields:
-          - {label: Introduction, name: body, widget: markdown}
-
-      - label: "Rooms"
-        name: "rooms"
-        file: "src/sections/rooms.md"
-        fields:
-          - label: Title
-            name: title
-            widget: string
-          - label: Body
-            name: body
-            widget: markdown
-          - label: 'Room information'
-            allow_add: false
-            name: roomInfo
-            widget: list
-            fields:
-              - {label: 'Room name', name: roomName, widget: string}
-              - {label: Image, name: roomImage, widget: image}
-              - label: 'Room highlights'
-                name: roomHighlights
-                widget: list
-                field: {label: Highlight, name: highlight, widget: string}
-              - {label: Price, name: price, widget: string}
-              - {label: Single Occupancy, name: soText, widget: string}
-
-      - label: "Food & Drink"
-        name: "foodanddrink"
-        file: "src/sections/foodanddrink.md"
-        fields:
-          - {label: Title, name: title, widget: string }
-          - {label: Opening text, name: openingText, widget: text }
-          - {label: Divider text 1, name: dividerText1, widget: text }
-          - {label: Divider text 2, name: dividerText2, widget: text }
-          - label: 'Menu items'
-            name: menuItems
-            widget: list
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Description, name: description, widget: string}
-
-      - label: "Experiences"
-        name: "experiences"
-        file: "src/sections/experiences.md"
-        fields:
-          - {label: Title, name: title, widget: string }
-          - {label: Opening text, name: openingText, widget: text }
-          - {label: Secondary text, name: body, widget: markdown }

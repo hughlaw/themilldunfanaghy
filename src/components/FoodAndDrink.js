@@ -25,7 +25,7 @@ const FoodAndDrink = ({ data }) => {
 
       <div className="divider">
         <Image
-          fluid={data.healthyBreakfast.childImageSharp.fluid}
+          fluid={data.pageContent.frontmatter.foodAndDrink.foodImage1.childImageSharp.fluid}
           className="divider__image"
           alt="Fruit salad with natural yogurt"/>
       </div>
@@ -34,7 +34,7 @@ const FoodAndDrink = ({ data }) => {
 
       <div className="divider">
         <Image
-          fluid={data.friedBreakfast.childImageSharp.fluid}
+          fluid={data.pageContent.frontmatter.foodAndDrink.foodImage2.childImageSharp.fluid}
           className="divider__image"
           alt="Full Irish breakfast"/>
       </div>
@@ -43,7 +43,7 @@ const FoodAndDrink = ({ data }) => {
 
       <div className="divider">
         <Image
-          fluid={data.prossecoAndOlives.childImageSharp.fluid}
+          fluid={data.pageContent.frontmatter.foodAndDrink.foodImage3.childImageSharp.fluid}
           className="divider__image"
           alt="Prosecco and olives with cheese and cold meats"/>
       </div>
@@ -67,33 +67,33 @@ export default props => (
             foodAndDrink {
               dividerText1
               dividerText2
+              foodImage1 {
+                childImageSharp {
+                  fluid(quality: 90, webpQuality: 80) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+              foodImage2 {
+                childImageSharp {
+                  fluid(quality: 90, webpQuality: 80) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+              foodImage3 {
+                childImageSharp {
+                  fluid(quality: 90, webpQuality: 80) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
               menuItems {
                 description
                 title
               }
               openingText
               title
-            }
-          }
-        }
-        healthyBreakfast: file(relativePath: {eq: "healthy-breakfast-large@2x.jpg"}) {
-          childImageSharp {
-            fluid(quality: 80, webpQuality: 80) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        friedBreakfast: file(relativePath: {eq: "fried-breakfast-large@2x.jpg"}) {
-          childImageSharp {
-            fluid(quality: 80, webpQuality: 80) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        prossecoAndOlives: file(relativePath: {eq: "prosseco-and-olives-large@2x.jpg"}) {
-          childImageSharp {
-            fluid(quality: 80, webpQuality: 80) {
-              ...GatsbyImageSharpFluid
             }
           }
         }
