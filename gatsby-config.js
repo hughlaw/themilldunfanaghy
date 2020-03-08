@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'The Mill Dunfanaghy - Idilic accommodation in the North West of Ireland',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'A small guesthouse offering seven individually decorated rooms, award winning breakfast on the outskirts of picturesque Dunfanaghy, Co Donegal',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
