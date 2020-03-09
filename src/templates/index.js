@@ -14,11 +14,13 @@ import Footer from '../components/Footer';
 class IndexPageTemplate extends React.Component {
 
   componentDidMount() {
-    WebFont.load({
-      google: {
-        families: ['Montserrat', 'Playfair Display', 'sans-serif']
-      }
-    });
+    if (window) {
+      WebFont.load({
+        google: {
+          families: ['Montserrat', 'Playfair Display', 'sans-serif']
+        }
+      });
+    }
   }
 
   render() {
