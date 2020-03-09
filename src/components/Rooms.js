@@ -40,7 +40,9 @@ const Rooms = ({ data }) => {
     <section id="rooms">
       <h1>{data.pageContent.frontmatter.rooms.title}</h1>
 
-      {data.pageContent.frontmatter.rooms.intro1}
+      <div className="restricted-width">
+        {data.pageContent.frontmatter.rooms.intro1}
+      </div>
 
       <div className="divider">
         <Image
@@ -49,7 +51,9 @@ const Rooms = ({ data }) => {
           alt="Misty view of new lake at sun rise"/>
       </div>
 
-      {data.pageContent.frontmatter.rooms.intro2}
+      <div className="restricted-width">
+        {data.pageContent.frontmatter.rooms.intro2}
+      </div>
 
       <div className="grid room-grid restricted-width">
         {rooms}

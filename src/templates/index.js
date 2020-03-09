@@ -11,31 +11,38 @@ import Gallery from '../components/Gallery';
 import AboutUs from '../components/AboutUs';
 import Footer from '../components/Footer';
 
-WebFont.load({
-  google: {
-    families: ['Montserrat', 'Playfair Display', 'sans-serif']
+class IndexPageTemplate extends React.Component {
+
+  componentDidMount() {
+    WebFont.load({
+      google: {
+        families: ['Montserrat', 'Playfair Display', 'sans-serif']
+      }
+    });
   }
-});
 
-export const IndexPageTemplate = () => (
-  <>
-    <Navigation />
+  render() {
+    return (
+      <>
+        <Navigation />
 
-    <Introduction />
+        <Introduction />
 
-    <Rooms />
+        <Rooms />
 
-    <FoodAndDrink />
+        <FoodAndDrink />
 
-    <Experiences />
+        <Experiences />
 
-    <Gallery />
+        <Gallery />
 
-    <AboutUs />
+        <AboutUs />
 
-    <Footer />
-  </>
-)
+        <Footer />
+      </>
+    )
+  }
+}
 
 const IndexPage = () => (
   <Layout>

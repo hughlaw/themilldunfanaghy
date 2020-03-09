@@ -12,7 +12,7 @@ const Introduction = ({ data }) => (
     </div>
     <h1 className="sr-only">Introduction</h1>
     <div className="grid intro-grid restricted-width">
-      <div className="grid__cell text--with-margin-top">
+      <div className="grid__cell">
         {data.markdownRemark.frontmatter.introduction.introText}
       </div>
 

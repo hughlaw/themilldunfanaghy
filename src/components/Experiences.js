@@ -13,7 +13,9 @@ const Experiences = ({ data }) => (
         className="divider__image"
         alt="Rowing boats moored at the side of the new lake on a warm summer's evening"/>
     </div>
-    {data.pageContent.frontmatter.experiences.secondaryText}
+    <div className="restricted-width">
+      {data.pageContent.frontmatter.experiences.secondaryText}
+    </div>
   </section>
 )
 

@@ -213,7 +213,6 @@ $panel-width: 70vw;
   .intro-grid {
     grid-template-columns: 1fr 1fr;
     .grid__cell:last-child {
-      padding-top: $spacing;
       text-align: center;
     }
   }
@@ -266,7 +265,7 @@ button {
 }
 
 .grid {
-  margin: $spacing*2 0;
+  margin: $spacing*2 auto;
   display: grid;
   gap: $spacing*2;
 }

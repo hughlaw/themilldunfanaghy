@@ -18,6 +18,8 @@ collections:
       - file: "src/pages/index.md"
         name: homepage
         label: Homepage
+        editor:
+          preview: false
         fields:
           - label: Page identier
             name: pageIdentifier
