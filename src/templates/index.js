@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import WebFont from 'webfontloader';
 
 import Navigation from '../components/Navigation';
 import Introduction from '../components/Introduction';
@@ -10,6 +9,8 @@ import Experiences from '../components/Experiences';
 import Gallery from '../components/Gallery';
 import AboutUs from '../components/AboutUs';
 import Footer from '../components/Footer';
+
+const WebFont = typeof window !== `undefined` ? require("webfontloader") : null;
 
 class IndexPageTemplate extends React.Component {
 
