@@ -6,21 +6,22 @@ const Introduction = ({ data }) => (
   <section id="introduction">
     <div className="splash">
       <div className="splash__brand">
-        <span className="splash__brand--centered">The Mill</span>
-        <span className="splash__brand--centered splash__brand--small">Dunfanaghy</span>
+        <h1>
+          <span className="splash__brand--centered">The Mill</span>
+          <span className="splash__brand--centered splash__brand--small">Dunfanaghy</span>
+        </h1>
       </div>
     </div>
-    <h1 className="sr-only">Introduction</h1>
+    <h2 className="sr-only">Introduction</h2>
     <div className="grid intro-grid restricted-width">
       <div className="grid__cell">
         {data.markdownRemark.frontmatter.introduction.introText}
       </div>
 
       <div className="grid__cell">
-        <BookButton />
-
-        <h2>Opening hours</h2>
+        <h3 className="no-margin-top">Opening hours</h3>
         <p>{data.markdownRemark.frontmatter.introduction.openingDatesText}</p>
+        <BookButton />
       </div>
     </div>
   </section>

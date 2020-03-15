@@ -66,22 +66,24 @@ class Navigation extends React.Component {
 
         <div className="navigation__panel">
 
-          <ul className="navigation__link-block">
-            <li className="navigation__item">
-              <a className="navigation__link link--unstyled" href="#rooms" onClick={this.onToggleMenu}>Our rooms</a>
-            </li>
-            <li className="navigation__item">
-              <a className="navigation__link link--unstyled" href="#food-and-drink" onClick={this.onToggleMenu}>Food & drink</a>
-            </li>
-            <li className="navigation__item">
-              <a className="navigation__link link--unstyled" href="#experiences" onClick={this.onToggleMenu}>Experiences</a>
-            </li>
-            <li className="navigation__item">
-              <a className="navigation__link link--unstyled" href="#about-us" onClick={this.onToggleMenu}>About us</a>
-            </li>
-          </ul>
+          <div className="restricted-width">
+            <ul className="navigation__link-block">
+              <li className="navigation__item">
+                <a className="navigation__link link--unstyled" href="#rooms" onClick={this.onToggleMenu}>Our rooms</a>
+              </li>
+              <li className="navigation__item">
+                <a className="navigation__link link--unstyled" href="#food-and-drink" onClick={this.onToggleMenu}>Food & drink</a>
+              </li>
+              <li className="navigation__item">
+                <a className="navigation__link link--unstyled" href="#experiences" onClick={this.onToggleMenu}>Experiences</a>
+              </li>
+              <li className="navigation__item">
+                <a className="navigation__link link--unstyled" href="#about-us" onClick={this.onToggleMenu}>About us</a>
+              </li>
+            </ul>
 
-          <BookButton variant="navigation__book-button" />
+            <BookButton variant="navigation__book-button" />
+          </div>
 
           <div className="navigation__contact-details">
             <address className="address">
@@ -90,8 +92,8 @@ class Navigation extends React.Component {
               Co. Donegal<br />
               Ireland<br />
 
-              <a href="tel://+353749136985" className="footer__link--block link--unstyled text--with-margin-top">+353 (0)74 913 6985</a>
-              <a href="mailto:info@themilldunfanaghy.com" className="footer__link--block link--unstyled">info@themilldunfanaghy.com</a>
+              <a href="tel://+353749136985" className="footer__link--block link--unstyled text--with-margin-top" aria-label="Call us on 00353 74 913 6985">+353 (0)74 913 6985</a>
+              <a href="mailto:info@themilldunfanaghy.com" className="footer__link--block link--unstyled" aria-label="Email us at info@themilldunfanaghy.com">info@themilldunfanaghy.com</a>
             </address>
 
             <div className="social">

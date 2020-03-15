@@ -4,7 +4,7 @@ import Image from 'gatsby-image'
 
 const Experiences = ({ data }) => (
   <section id="experiences">
-    <h1>{data.pageContent.frontmatter.experiences.title}</h1>
+    <h2>{data.pageContent.frontmatter.experiences.title}</h2>
     <p>{data.pageContent.frontmatter.experiences.openingText}</p>
 
     <div className="divider">

@@ -12,7 +12,7 @@ const FoodAndDrink = ({ data }) => {
     }
     return (
       <div className="menu-item" key={i}>
-        <h3 className="menu-item__title">{menuItem.title}</h3>
+        <h4 className="menu-item__title">{menuItem.title}</h4>
         {description}
       </div>
     )
@@ -20,7 +20,7 @@ const FoodAndDrink = ({ data }) => {
 
   return (
     <section id="food-and-drink">
-      <h1>{data.pageContent.frontmatter.foodAndDrink.title}</h1>
+      <h2>{data.pageContent.frontmatter.foodAndDrink.title}</h2>
       <p>{data.pageContent.frontmatter.foodAndDrink.openingText}</p>
 
       <div className="divider">
@@ -48,7 +48,7 @@ const FoodAndDrink = ({ data }) => {
           alt="Prosecco and olives with cheese and cold meats"/>
       </div>
 
-      <h2 className="heading--centered">Breakfast menu</h2>
+      <h3 className="heading--centered">Breakfast menu</h3>
 
       {menu}
 

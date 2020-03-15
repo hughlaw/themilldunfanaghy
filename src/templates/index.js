@@ -14,7 +14,7 @@ import Footer from '../components/Footer';
 class IndexPageTemplate extends React.Component {
 
   componentDidMount() {
-    if (window) {
+    if (typeof window !== 'undefined') {
       WebFont.load({
         google: {
           families: ['Montserrat', 'Playfair Display', 'sans-serif']

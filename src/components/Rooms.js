@@ -26,7 +26,7 @@ const Rooms = ({ data }) => {
           alt={altTextForImage} />
 
         <div className="card__text">
-          <h2>{room.roomName}</h2>
+          <h3>{room.roomName}</h3>
           <ul className="card__text--no-bullets">
             {highlights}
           </ul>
@@ -38,7 +38,7 @@ const Rooms = ({ data }) => {
 
   return (
     <section id="rooms">
-      <h1>{data.pageContent.frontmatter.rooms.title}</h1>
+      <h2>{data.pageContent.frontmatter.rooms.title}</h2>
 
       <div className="restricted-width">
         {data.pageContent.frontmatter.rooms.intro1}
