@@ -13,7 +13,8 @@ local_backend: false
 
 media_folder: static/img
 public_folder: /img
-
+editor:
+  preview: false
 collections:
   - label: "Pages"
     name: "pages"
