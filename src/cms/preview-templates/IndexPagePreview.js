@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { IndexPageTemplate } from '../../templates/index'
+import IndexPage from '../../templates/index'
 
 const IndexPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
   if (data) {
     return (
-      <IndexPageTemplate
+      <IndexPage
         image={getAsset(data.image)}
         title={data.title}
         heading={data.heading}

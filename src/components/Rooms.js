@@ -26,7 +26,7 @@ const Rooms = ({ data }) => {
           alt={altTextForImage} />
 
         <div className="card__text">
-          <h3>{room.roomName}</h3>
+          <h3><span className="sr-only">Room:</span>{room.roomName}</h3>
           <ul className="card__text--no-bullets">
             {highlights}
           </ul>

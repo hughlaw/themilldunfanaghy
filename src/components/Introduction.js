@@ -1,10 +1,14 @@
 import React from "react";
 import {StaticQuery, graphql} from 'gatsby'
 import BookButton from './BookButton'
+import Image from 'gatsby-image'
 
 const Introduction = ({ data }) => (
   <section id="introduction">
     <div className="splash">
+      <Image
+        fluid={data.markdownRemark.frontmatter.splashImage.childImageSharp.fluid}
+        alt="" />
       <div className="splash__brand">
         <h1>
           <span className="splash__brand--centered">The Mill</span>
@@ -33,6 +37,13 @@ export default props => (
       {
         markdownRemark(frontmatter: {pageIdentifier: {eq: "homepage"}}) {
           frontmatter {
+            splashImage {
+              childImageSharp {
+                fluid(quality: 80, webpQuality: 80, jpegQuality: 80, jpegProgressive: true) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             introduction {
               introText
               openingDatesText

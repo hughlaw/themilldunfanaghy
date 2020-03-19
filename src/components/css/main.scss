@@ -179,29 +179,9 @@ $panel-width: 70vw;
   min-height: 100vh;
   margin-left: -$spacing;
   margin-right: -$spacing;
-  background-image: url(../../img/splash-image-small.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-@media screen and (min-resolution: 144dpi) {
-  .splash { background-image: url(../../img/splash-image-small@2x.jpg) }
-}
-
-@media screen and (min-width: $md) {
-  .splash { background-image: url(../../img/splash-image-medium.jpg) }
-}
-
-@media screen and (min-width: $md) and (min-resolution: 144dpi) {
-  .splash { background-image: url(../../img/splash-image-medium@2x.jpg) }
-}
-
-@media screen and (min-width: $lg) {
-  .splash { background-image: url(../../img/splash-image-large.jpg) }
-}
-
-@media screen and (min-width: $lg) and (min-resolution: 144dpi) {
-  .splash { background-image: url(../../img/splash-image-large@2x.jpg) }
+  .gatsby-image-wrapper {
+    height: 100vh;
+  }
 }
 
 .splash__brand {

@@ -29,19 +29,21 @@ class IndexPageTemplate extends React.Component {
       <>
         <Navigation />
 
-        <Introduction />
+        <main>
+          <Introduction />
 
-        <Rooms />
+          <Rooms />
 
-        <FoodAndDrink />
+          <FoodAndDrink />
 
-        <Experiences />
+          <Experiences />
 
-        <Gallery />
+          <Gallery />
 
-        <AboutUs />
+          <AboutUs />
 
-        <Footer />
+          <Footer />
+        </main>
       </>
     )
   }

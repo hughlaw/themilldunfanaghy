@@ -1,6 +1,7 @@
 ---
 pageIdentifier: homepage
 templateKey: index
+splashImage: /img/splash-image-large@2x.jpg
 introduction:
   introText: >-
     The Mill has reached a new chapter in 2020, offering the best place to stay
@@ -106,14 +107,14 @@ foodAndDrink:
     For a more hearty start to the day, a vast range that includes a Full Irish
     Breakfast, Vegetarian breakfast, Smoked salmon, Egg dishes and Fresh fish
     from The Bay can be ordered from the kitchen.
-  foodImage1: /img/healthy-breakfast-large@2x.jpg
-  foodImage2: /img/fried-breakfast-large@2x.jpg
-  foodImage3: /img/prosseco-and-olives-large@2x.jpg
   dividerText2: >-
     On a lovely Summer's evening, if you fancy a glass of Prosecco at one of our
     many romantic seating areas in the garden , we do have an Honesty Bar for to
     avail of, offering a selection of fine wines and Donegal Craft Beers . Or of
     course by the Open fire on cold, wet night.
+  foodImage1: /img/healthy-breakfast-large@2x.jpg
+  foodImage2: /img/fried-breakfast-large@2x.jpg
+  foodImage3: /img/prosseco-and-olives-large@2x.jpg
   menuItems:
     - description: >-
         Burrowe’s Pork Sausages & Home Cured Bacon, Free Range Fried Egg, Potato
@@ -151,11 +152,11 @@ foodAndDrink:
     more.
   title: Food & drink
 experiences:
+  dividerExperiences: /img/boats-on-the-new-lake-large@2x.jpg
   openingText: >-
     From a relaxing afternoon browsing the many gift shops in town or cantering
     along the amazing Tramore beach, there are activities and experiences to
     suit everyone.
-  dividerExperiences: /img/boats-on-the-new-lake-large@2x.jpg
   secondaryText: >-
     With our local knowledge we can help you experience all the highlights that
     Dunfanaghy area has to offer including superb Blue Flag beaches, golf
@@ -165,6 +166,15 @@ experiences:
 
     All of this on the Wild Atlantic Way.
   title: Experiences
+gallery:
+  - altText: 2 golden retriever dogs on the beach
+    galleryImage: /img/dogs-on-the-beach-large@2x.jpg
+  - altText: The sun setting over new lake
+    galleryImage: /img/new-lake-at-sunset-large@2x.jpg
+  - altText: A view of Muckish mountain on a cold winters day
+    galleryImage: /img/muckish-in-the-winter-large@2x.jpg
+  - altText: Horses running along a beach
+    galleryImage: /img/horses-on-the-beach-large@2x.jpg
 aboutUs:
   aboutUsText: >-
     Susan and Derek are no strangers to the hospitality world having spent 20

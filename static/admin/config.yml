@@ -8,6 +8,9 @@ backend:
     uploadMedia: '[skip ci] Upload “{{path}}”'
     deleteMedia: '[skip ci] Delete “{{path}}”'
 
+# when using the default proxy server port
+local_backend: true
+
 media_folder: static/img
 public_folder: /img
 
@@ -24,15 +27,26 @@ collections:
           - label: Page identier
             name: pageIdentifier
             widget: hidden
+
           - label: Template key
             name: templateKey
             widget: hidden
-          - label: "Introduction"
-            name: "introduction"
+
+          - label: Splash image
+            name: splashImage
+            widget: image
+
+          - label: Introduction
+            name: introduction
             widget: object
             fields:
-              - {label: Text, name: introText, widget: markdown}
-              - {label: Opening dates, name: openingDatesText, widget: string}
+              - label: Text
+                name: introText
+                widget: markdown
+                buttons: ['bulleted-list', 'numbered-list']
+              - label: Opening dates
+                name: openingDatesText
+                widget: string
 
           - label: Divider Image
             name: divider1
@@ -49,10 +63,12 @@ collections:
                 name: intro1
                 widget: markdown
                 required: false
+                buttons: ['bulleted-list', 'numbered-list']
               - label: Text
                 name: intro2
                 widget: markdown
                 required: false
+                buttons: ['bulleted-list', 'numbered-list']
               - label: 'Room information'
                 allow_add: false
                 name: roomInfo
@@ -72,11 +88,11 @@ collections:
             widget: object
             fields:
               - {label: Title, name: title, widget: string }
-              - {label: Text, name: openingText, widget: markdown }
+              - {label: Text, name: openingText, widget: markdown, buttons: ['bulleted-list', 'numbered-list'] }
               - {label: Image, name: foodImage1, widget: image }
-              - {label: Text, name: dividerText1, widget: markdown }
+              - {label: Text, name: dividerText1, widget: markdown, buttons: ['bulleted-list', 'numbered-list'] }
               - {label: Image, name: foodImage2, widget: image }
-              - {label: Text, name: dividerText2, widget: markdown }
+              - {label: Text, name: dividerText2, widget: markdown, buttons: ['bulleted-list', 'numbered-list'] }
               - {label: Image, name: foodImage3, widget: image }
               - label: 'Menu items'
                 name: menuItems
@@ -90,15 +106,23 @@ collections:
             widget: object
             fields:
               - {label: Title, name: title, widget: string }
-              - {label: Text, name: openingText, widget: markdown }
+              - {label: Text, name: openingText, widget: , buttons: ['bulleted-list', 'numbered-list'] }
               - {label: Image, name: dividerExperiences, widget: image }
-              - {label: Text, name: secondaryText, widget: markdown }
+              - {label: Text, name: secondaryText, widget: markdown, buttons: ['bulleted-list', 'numbered-list'] }
+
+          - label: Gallery Images
+            name: gallery
+            hint: All images should be the same width and height (2880x1200px)
+            widget: list
+            fields:
+              - { label: Image, name: galleryImage, widget: image }
+              - { label: Alt text, name: altText, widget: text, required: false, hint: Provide some description text of the image }
 
           - label: About Us
             name: aboutUs
             widget: object
             fields:
               - {label: Title, name: title, widget: string }
-              - {label: Text, name: aboutUsText, widget: markdown }
+              - {label: Text, name: aboutUsText, widget: markdown, buttons: ['bulleted-list', 'numbered-list'] }
               - {label: Title, name: title2, widget: string }
-              - {label: Text, name: aboutUsText2, widget: markdown }
+              - {label: Text, name: aboutUsText2, widget: markdown, buttons: ['bulleted-list', 'numbered-list'] }

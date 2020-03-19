@@ -22,6 +22,16 @@ class Gallery extends React.Component {
   }
 
   render() {
+    const galleryImages = this.props.data.markdownRemark.frontmatter.gallery.map((image, i) => {
+      return (
+        <Image
+          fluid={image.galleryImage.childImageSharp.fluid}
+          className="siema__image"
+          alt={image.altText}
+          key={i} />
+      )
+    });
+
     return (
       <section id="gallery" className="gallery no-padding">
         <button className="gallery__button gallery__button-prev" aria-label="Previous image" onClick={() => this.onNavigateSlideshow('prev')}>
@@ -39,27 +49,7 @@ class Gallery extends React.Component {
         </button>
 
         <div className="siema">
-
-          <Image
-            fluid={this.props.data.dogsOnTheBeach.childImageSharp.fluid}
-            className="siema__image"
-            alt="Two happy dogs on the beach"/>
-
-          <Image
-            fluid={this.props.data.muckishInWinter.childImageSharp.fluid}
-            className="siema__image"
-            alt="Winter scene with Muckish mountain in the background"/>
-
-          <Image
-            fluid={this.props.data.horsesOnTheBeach.childImageSharp.fluid}
-            className="siema__image"
-            alt="Horses running on a beach"/>
-
-          <Image
-            fluid={this.props.data.newLakeSunset.childImageSharp.fluid}
-            className="siema__image"
-            alt="Sunset scene at new lake"/>
-
+          {galleryImages}
         </div>
       </section>
     )
@@ -69,36 +59,22 @@ class Gallery extends React.Component {
 export default props => (
   <StaticQuery
     query={graphql`
-      {
-        dogsOnTheBeach: file(relativePath: {eq: "slideshow/dogs-on-the-beach-large@2x.jpg"}) {
-          childImageSharp {
-            fluid(quality: 80, webpQuality: 80) {
-              ...GatsbyImageSharpFluid
+    {
+      markdownRemark(frontmatter: {pageIdentifier: {eq: "homepage"}}) {
+        frontmatter {
+          gallery {
+            galleryImage {
+              childImageSharp {
+                fluid(quality: 80, webpQuality: 80, jpegQuality: 80, jpegProgressive: true) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
-          }
-        }
-        muckishInWinter: file(relativePath: {eq: "slideshow/muckish-in-the-winter-large@2x.jpg"}) {
-          childImageSharp {
-            fluid(quality: 80, webpQuality: 80) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        horsesOnTheBeach: file(relativePath: {eq: "slideshow/horses-on-the-beach-large@2x.jpg"}) {
-          childImageSharp {
-            fluid(quality: 80, webpQuality: 80) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        newLakeSunset: file(relativePath: {eq: "slideshow/new-lake-at-sunset-large@2x.jpg"}) {
-          childImageSharp {
-            fluid(quality: 80, webpQuality: 80) {
-              ...GatsbyImageSharpFluid
-            }
+            altText
           }
         }
       }
+    }
     `}
     render={data => <Gallery data={data} {...props} />}
   ></StaticQuery>
