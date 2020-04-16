@@ -1,5 +1,5 @@
-import React from 'react'
-import Layout from '../components/Layout'
+import React from 'react';
+import Layout from '../components/Layout';
 
 import Navigation from '../components/Navigation';
 import Introduction from '../components/Introduction';
@@ -10,10 +10,9 @@ import Gallery from '../components/Gallery';
 import AboutUs from '../components/AboutUs';
 import Footer from '../components/Footer';
 
-const WebFont = typeof window !== `undefined` ? require("webfontloader") : null;
+const WebFont = typeof window !== `undefined` ? require('webfontloader') : null;
 
 class IndexPageTemplate extends React.Component {
-
   componentDidMount() {
     if (typeof window !== 'undefined') {
       WebFont.load({
@@ -45,7 +44,7 @@ class IndexPageTemplate extends React.Component {
           <Footer />
         </main>
       </>
-    )
+    );
   }
 }
 
@@ -53,6 +52,6 @@ const IndexPage = () => (
   <Layout>
     <IndexPageTemplate />
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;

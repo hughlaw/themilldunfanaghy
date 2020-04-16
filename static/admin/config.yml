@@ -16,10 +16,10 @@ public_folder: /img
 editor:
   preview: false
 collections:
-  - label: "Pages"
-    name: "pages"
+  - label: 'Pages'
+    name: 'pages'
     files:
-      - file: "src/pages/index.md"
+      - file: 'src/pages/index.md'
         name: homepage
         label: Homepage
         editor:
@@ -40,6 +40,7 @@ collections:
           - label: Introduction
             name: introduction
             widget: object
+            collapsed: true
             fields:
               - label: Text
                 name: introText
@@ -53,14 +54,15 @@ collections:
             name: divider1
             widget: image
 
-          - label: "Rooms"
-            name: "rooms"
+          - label: 'Rooms'
+            name: 'rooms'
             widget: object
+            collapsed: true
             fields:
               - label: Title
                 name: title
                 widget: string
-              - label:  Text
+              - label: Text
                 name: intro1
                 widget: markdown
                 required: false
@@ -75,41 +77,78 @@ collections:
                 name: roomInfo
                 widget: list
                 fields:
-                  - {label: 'Room name', name: roomName, widget: string}
-                  - {label: Image, name: roomImage, widget: image}
+                  - { label: 'Room name', name: roomName, widget: string }
+                  - { label: Image, name: roomImage, widget: image }
                   - label: 'Room highlights'
                     name: roomHighlights
                     widget: list
-                    field: {label: Highlight, name: highlight, widget: string}
-                  - {label: Price, name: price, widget: string}
-                  - {label: Single occupancy text, name: soText, widget: string, required: false}
+                    field: { label: Highlight, name: highlight, widget: string }
+                  - { label: Price, name: price, widget: string }
+                  - {
+                      label: Single occupancy text,
+                      name: soText,
+                      widget: string,
+                      required: false,
+                    }
 
-          - label: "Food & Drink"
+          - label: 'Food & Drink'
             name: foodAndDrink
             widget: object
+            collapsed: true
             fields:
-              - {label: Title, name: title, widget: string }
-              - {label: Text, name: openingText, widget: markdown, buttons: ['bulleted-list', 'numbered-list'] }
-              - {label: Image, name: foodImage1, widget: image }
-              - {label: Text, name: dividerText1, widget: markdown, buttons: ['bulleted-list', 'numbered-list'] }
-              - {label: Image, name: foodImage2, widget: image }
-              - {label: Text, name: dividerText2, widget: markdown, buttons: ['bulleted-list', 'numbered-list'] }
-              - {label: Image, name: foodImage3, widget: image }
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: Text,
+                  name: openingText,
+                  widget: markdown,
+                  buttons: ['bulleted-list', 'numbered-list'],
+                }
+              - { label: Image, name: foodImage1, widget: image }
+              - {
+                  label: Text,
+                  name: dividerText1,
+                  widget: markdown,
+                  buttons: ['bulleted-list', 'numbered-list'],
+                }
+              - { label: Image, name: foodImage2, widget: image }
+              - {
+                  label: Text,
+                  name: dividerText2,
+                  widget: markdown,
+                  buttons: ['bulleted-list', 'numbered-list'],
+                }
+              - { label: Image, name: foodImage3, widget: image }
               - label: 'Menu items'
                 name: menuItems
                 widget: list
                 fields:
-                  - {label: Title, name: title, widget: string}
-                  - {label: Description, name: description, widget: string, required: false}
+                  - { label: Title, name: title, widget: string }
+                  - {
+                      label: Description,
+                      name: description,
+                      widget: string,
+                      required: false,
+                    }
 
           - label: Experiences
             name: experiences
             widget: object
+            collapsed: true
             fields:
-              - {label: Title, name: title, widget: string }
-              - {label: Text, name: openingText, widget: , buttons: ['bulleted-list', 'numbered-list'] }
-              - {label: Image, name: dividerExperiences, widget: image }
-              - {label: Text, name: secondaryText, widget: markdown, buttons: ['bulleted-list', 'numbered-list'] }
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: Text,
+                  name: openingText,
+                  widget,
+                  buttons: ['bulleted-list', 'numbered-list'],
+                }
+              - { label: Image, name: dividerExperiences, widget: image }
+              - {
+                  label: Text,
+                  name: secondaryText,
+                  widget: markdown,
+                  buttons: ['bulleted-list', 'numbered-list'],
+                }
 
           - label: Gallery Images
             name: gallery
@@ -117,13 +156,30 @@ collections:
             widget: list
             fields:
               - { label: Image, name: galleryImage, widget: image }
-              - { label: Alt text, name: altText, widget: text, required: false, hint: Provide some description text of the image }
+              - {
+                  label: Alt text,
+                  name: altText,
+                  widget: text,
+                  required: false,
+                  hint: Provide some description text of the image,
+                }
 
           - label: About Us
             name: aboutUs
             widget: object
+            collapsed: true
             fields:
-              - {label: Title, name: title, widget: string }
-              - {label: Text, name: aboutUsText, widget: markdown, buttons: ['bulleted-list', 'numbered-list'] }
-              - {label: Title, name: title2, widget: string }
-              - {label: Text, name: aboutUsText2, widget: markdown, buttons: ['bulleted-list', 'numbered-list'] }
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: Text,
+                  name: aboutUsText,
+                  widget: markdown,
+                  buttons: ['bulleted-list', 'numbered-list'],
+                }
+              - { label: Title, name: title2, widget: string }
+              - {
+                  label: Text,
+                  name: aboutUsText2,
+                  widget: markdown,
+                  buttons: ['bulleted-list', 'numbered-list'],
+                }
