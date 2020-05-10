@@ -214,7 +214,7 @@ aboutUs:
 
 
     Work began in 1999 to modernise and enlarge the house to accommodate a
-    restaurant, 6 ensuite rooms and a living area. In 201another room,  The
+    restaurant, 6 ensuite rooms and a living area. In 2001 another room,  The
     Studio, was added.
 
 
