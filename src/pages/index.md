@@ -2,6 +2,13 @@
 pageIdentifier: homepage
 templateKey: index
 splashImage: /img/splash-image-large@2x.jpg
+alert:
+  showAlert: false
+  alertTitle: COVID-19
+  alertText: >-
+    Due to recent developments with the worldwide pandemic, we are currently
+    closed, but please get in touch if you would like to come and stay when we
+    reopen (hopefully) in July.
 introduction:
   introText: >-
     The Mill has reached a new chapter in 2020, offering the best place to stay
@@ -48,14 +55,18 @@ rooms:
         - Nespresso coffee machine
         - Overlooking drive and garden
         - Sitting area
-      roomImage: /img/studio@2x.jpg
       roomName: The Studio
+      roomImages:
+        - roomImage: /img/studio@2x.jpg
+          roomImageAlt: a large room with four poster bed and rolltop bath
     - price: From €60 per person
       roomHighlights:
         - 168 sq feet
         - Double bed with ensuite bath and shower
         - Lake view
-      roomImage: /img/figart@2x.jpg
+      roomImages:
+        - roomImage: /img/figart@2x.jpg
+          roomImageAlt: The bed in the Figart room
       roomName: Figart
       soText: Single occupancy from €75
     - price: From €60 per person
@@ -63,7 +74,9 @@ rooms:
         - 137.5 sq feet
         - Double bed with ensuite shower
         - Lake view
-      roomImage: /img/rinclevin@2x.jpg
+      roomImages:
+        - roomImage: /img/rinclevin@2x.jpg
+          roomImageAlt: The bed in the Rinclevin room
       roomName: Rinclevin
       soText: Single occupancy from €75
     - price: From €65 per person
@@ -73,7 +86,9 @@ rooms:
         - Ensuite bath and shower
         - Lake view
         - Nespresso coffee machine
-      roomImage: /img/castlebane@2x.jpg
+      roomImages:
+        - roomImage: /img/castlebane@2x.jpg
+          roomImageAlt: The bed in the Castlebane room
       roomName: Castlebane
     - price: From €65 per person
       roomHighlights:
@@ -81,7 +96,9 @@ rooms:
         - Kingsize bed with ensuite shower
         - Lake view
         - Nespresso coffee machine
-      roomImage: /img/casey@2x.jpg
+      roomImages:
+        - roomImage: /img/casey@2x.jpg
+          roomImageAlt: The bed in the Casey room
       roomName: Casey
     - price: From €65 per person
       roomHighlights:
@@ -90,7 +107,9 @@ rooms:
         - Ensuite bath and shower
         - Overlooking trees
         - Nespresso coffee machine
-      roomImage: /img/marfagh@2x.jpg
+      roomImages:
+        - roomImage: /img/marfagh@2x.jpg
+          roomImageAlt: The bed in the Marfagh room
       roomName: Marfagh
     - price: From €65 per person
       roomHighlights:
@@ -99,7 +118,9 @@ rooms:
         - Ensuite bath and shower
         - Overlooking the trees
         - Nespresso coffee machine
-      roomImage: /img/corgannive@2x.jpg
+      roomImages:
+        - roomImage: /img/corgannive@2x.jpg
+          roomImageAlt: The bed in the Corgannive room
       roomName: Corgannive
   title: Our rooms
 foodAndDrink:
@@ -200,5 +221,9 @@ aboutUs:
     Our new chapter begins in 2020.
   title: About us
   title2: The story of The Mill
+  profileImage: /img/splash-image-large@2x.jpg
+'footer,':
+  awardImages:
+    - awardImage: /img/mckenna_plaque_2020.png
+    - awardImage: /img/michelin.png
 ---
-

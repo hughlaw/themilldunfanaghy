@@ -37,6 +37,25 @@ collections:
             name: splashImage
             widget: image
 
+          - label: Alert message
+            collapsed: true
+            name: alert
+            widget: object
+            fields:
+              - label: Show alert
+                name: showAlert
+                widget: boolean
+                hint: Toggle whether the alert is shown or not
+                required: false
+              - label: Title
+                name: alertTitle
+                required: false
+                widget: string
+              - label: Alert text
+                name: alertText
+                required: false
+                widget: text
+
           - label: Introduction
             name: introduction
             widget: object
@@ -77,8 +96,24 @@ collections:
                 name: roomInfo
                 widget: list
                 fields:
-                  - { label: 'Room name', name: roomName, widget: string }
-                  - { label: Image, name: roomImage, widget: image }
+                  - label: 'Room name'
+                    name: roomName
+                    widget: string
+
+                  - label: Images
+                    name: roomImages
+                    widget: list
+                    fields:
+                      - label: Image
+                        name: roomImage
+                        widget: image
+
+                      - label: Alt text
+                        required: false
+                        name: roomImageAlt
+                        widget: string
+                        hint: provide some descriptive text for this image
+
                   - label: 'Room highlights'
                     name: roomHighlights
                     widget: list
@@ -176,6 +211,7 @@ collections:
                   widget: markdown,
                   buttons: ['bulleted-list', 'numbered-list'],
                 }
+              - { label: Profile image, name: profileImage, widget: image }
               - { label: Title, name: title2, widget: string }
               - {
                   label: Text,
@@ -183,3 +219,14 @@ collections:
                   widget: markdown,
                   buttons: ['bulleted-list', 'numbered-list'],
                 }
+
+          - label: Footer
+            name: footer,
+            widget: object
+            collapsed: true
+            fields:
+              - label: Award images
+                name: awardImages
+                widget: list
+                fields:
+                  - { label: Image, name: awardImage, widget: image }

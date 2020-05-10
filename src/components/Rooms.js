@@ -1,75 +1,76 @@
-import React from "react";
-import {StaticQuery, graphql} from 'gatsby'
-import Image from 'gatsby-image'
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Image from 'gatsby-image';
+import SiemaGallery from './SiemaGallery';
 
 const Rooms = ({ data }) => {
-  const rooms = data.pageContent.frontmatter.rooms.roomInfo.map((room) => {
-
-    const highlights = room.roomHighlights.map((highlight, i) =>
+  const frontmatter = data.pageContent.frontmatter;
+  const rooms = frontmatter.rooms.roomInfo.map((room, idx) => {
+    const highlights = room.roomHighlights.map((highlight, i) => (
       <li key={i}>{highlight}</li>
-    );
-
-    const altTextForImage = `Interior of ${room.roomName}`;
+    ));
 
     let priceText;
     if (room.soText) {
-      priceText = (<span className="card__text--with-margin">{room.price}<br />{room.soText}</span>)
+      priceText = (
+        <span className="card__text--with-margin">
+          {room.price}
+          <br />
+          {room.soText}
+        </span>
+      );
     } else {
-      priceText = (<span className="card__text--with-margin">{room.price}</span>)
+      priceText = <span className="card__text--with-margin">{room.price}</span>;
     }
 
     return (
       <div className="card" key={room.roomName}>
-        <Image
-          fluid={room.roomImage.childImageSharp.fluid}
-          className="card__image"
-          alt={altTextForImage} />
+        <SiemaGallery images={room.roomImages} idx={idx} />
 
         <div className="card__text">
-          <h3><span className="sr-only">Room:</span>{room.roomName}</h3>
-          <ul className="card__text--no-bullets">
-            {highlights}
-          </ul>
+          <h3>
+            <span className="sr-only">Room:</span>
+            {room.roomName}
+          </h3>
+          <ul className="card__text--no-bullets">{highlights}</ul>
           {priceText}
         </div>
       </div>
-    )
-  })
+    );
+  });
 
   return (
     <section id="rooms">
-      <h2>{data.pageContent.frontmatter.rooms.title}</h2>
+      <h2>{frontmatter.rooms.title}</h2>
 
-      <div className="restricted-width">
-        {data.pageContent.frontmatter.rooms.intro1}
-      </div>
+      <div className="restricted-width">{frontmatter.rooms.intro1}</div>
 
       <div className="divider">
         <Image
-          fluid={data.pageContent.frontmatter.divider1.childImageSharp.fluid}
+          fluid={frontmatter.divider1.childImageSharp.fluid}
           className="divider__image"
-          alt="Misty view of new lake at sun rise"/>
+          alt="Misty view of new lake at sun rise"
+        />
       </div>
 
-      <div className="restricted-width">
-        {data.pageContent.frontmatter.rooms.intro2}
-      </div>
+      <div className="restricted-width">{frontmatter.rooms.intro2}</div>
 
-      <div className="grid room-grid restricted-width">
-        {rooms}
-      </div>
+      <div className="grid room-grid restricted-width">{rooms}</div>
 
-      <button type="button" className="button">Book a room</button>
-
+      <button type="button" className="button">
+        Book a room
+      </button>
     </section>
-  )
-}
+  );
+};
 
-export default props => (
+export default (props) => (
   <StaticQuery
     query={graphql`
       {
-        pageContent: markdownRemark(frontmatter: {pageIdentifier: {eq: "homepage"}}) {
+        pageContent: markdownRemark(
+          frontmatter: { pageIdentifier: { eq: "homepage" } }
+        ) {
           html
           frontmatter {
             title
@@ -82,12 +83,15 @@ export default props => (
                 roomHighlights
                 roomName
                 soText
-                roomImage {
-                  childImageSharp {
-                    fluid {
-                      ...GatsbyImageSharpFluid
+                roomImages {
+                  roomImage {
+                    childImageSharp {
+                      fluid {
+                        ...GatsbyImageSharpFluid
+                      }
                     }
                   }
+                  roomImageAlt
                 }
               }
             }
@@ -102,6 +106,6 @@ export default props => (
         }
       }
     `}
-    render={data => <Rooms data={data} {...props} />}
+    render={(data) => <Rooms data={data} {...props} />}
   ></StaticQuery>
-)
+);

@@ -1,37 +1,118 @@
-import React from 'react'
+import React from 'react';
 import facebook from '../img/facebook.svg';
 import instagram from '../img/instagram.svg';
+import { StaticQuery, graphql } from 'gatsby';
+import Image from 'gatsby-image';
 
-class Footer extends React.Component {
-  render() {
+const Footer = ({ data }) => {
+  const images = data.markdownRemark.frontmatter.footer_.awardImages;
+  console.log(images);
+  const awardImages = images.map(({ awardImage }, idx) => {
+    console.log(awardImage);
     return (
-      <footer>
-        <div className="restricted-width">
-          <address className="address">
-            The Mill<br />
-            Dunfanaghy<br />
-            Co. Donegal<br />
-            Ireland<br />
+      <Image
+        fixed={awardImage.childImageSharp.fixed}
+        alt=""
+        className="award__image"
+      />
+    );
+  });
 
-            <a href="tel://+353749136985" className="footer__link--block link--unstyled text--with-margin-top" aria-label="Call us on 00353 74 913 6985">+353 (0)74 913 6985</a>
-            <a href="mailto:info@themilldunfanaghy.com" className="footer__link--block link--unstyled" aria-label="Email us at info@themilldunfanaghy.com">info@themilldunfanaghy.com</a>
+  return (
+    <footer>
+      <div className="restricted-width d-flex justify-content-between">
+        <div className="col">
+          <address className="address">
+            The Mill
+            <br />
+            Dunfanaghy
+            <br />
+            Co. Donegal
+            <br />
+            Ireland
+            <br />
+            <a
+              href="tel://+353749136985"
+              className="footer__link--block link--unstyled text--with-margin-top"
+              aria-label="Call us on 00353 74 913 6985"
+            >
+              +353 (0)74 913 6985
+            </a>
+            <a
+              href="mailto:info@themilldunfanaghy.com"
+              className="footer__link--block link--unstyled"
+              aria-label="Email us at info@themilldunfanaghy.com"
+            >
+              info@themilldunfanaghy.com
+            </a>
           </address>
           <div className="social">
-            <a href="https://www.facebook.com/themilldunfanaghy/" target="_blank" rel="noopener noreferrer" className="social__icon" aria-label="The Mill on Facebook">
+            <a
+              href="https://www.facebook.com/themilldunfanaghy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social__icon"
+              aria-label="The Mill on Facebook"
+            >
               <picture>
-                <img src={facebook} width="25" height="25" alt="facebook icon" />
+                <img
+                  src={facebook}
+                  width="25"
+                  height="25"
+                  alt="facebook icon"
+                />
               </picture>
             </a>
-            <a href="https://www.instagram.com/themilldunfanaghy/" target="_blank" rel="noopener noreferrer" className="social__icon" aria-label="The Mill on Instagram">
+            <a
+              href="https://www.instagram.com/themilldunfanaghy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social__icon"
+              aria-label="The Mill on Instagram"
+            >
               <picture>
-                <img src={instagram} width="25" height="25" alt="Instagram icon" />
+                <img
+                  src={instagram}
+                  width="25"
+                  height="25"
+                  alt="Instagram icon"
+                />
               </picture>
             </a>
           </div>
         </div>
-      </footer>
-    )
-  }
-}
+        <div className="col">{awardImages}</div>
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default (props) => (
+  <StaticQuery
+    query={graphql`
+      {
+        markdownRemark {
+          frontmatter {
+            footer_ {
+              awardImages {
+                awardImage {
+                  childImageSharp {
+                    fixed(
+                      quality: 5
+                      width: 125
+                      height: 125
+                      background: "rgba(255,255,255,1)"
+                    ) {
+                      ...GatsbyImageSharpFixed
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    `}
+    render={(data) => <Footer data={data} {...props} />}
+  ></StaticQuery>
+);
