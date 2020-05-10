@@ -409,6 +409,9 @@ footer {
   img {
     padding: 8px;
   }
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .address {
