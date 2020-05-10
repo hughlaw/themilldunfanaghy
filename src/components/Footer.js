@@ -6,9 +6,7 @@ import Image from 'gatsby-image';
 
 const Footer = ({ data }) => {
   const images = data.markdownRemark.frontmatter.footer_.awardImages;
-  console.log(images);
   const awardImages = images.map(({ awardImage }, idx) => {
-    console.log(awardImage);
     return (
       <Image
         fixed={awardImage.childImageSharp.fixed}
