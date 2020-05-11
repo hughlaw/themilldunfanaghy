@@ -3,12 +3,14 @@ pageIdentifier: homepage
 templateKey: index
 splashImage: /img/splash-image-large@2x.jpg
 alert:
-  showAlert: false
-  alertTitle: COVID-19
   alertText: >-
     Due to recent developments with the worldwide pandemic, we are currently
-    closed, but please get in touch if you would like to come and stay when we
-    reopen (hopefully) in July.
+    closed. We are due to reopen on the 20th July. If you would like postpone a
+    booking already made  or if we can help with your  holiday plans please do
+    get in touch.  We look forward to welcoming guests back to The Mill and
+    Dunfanaghy.
+  alertTitle: COVID-19
+  showAlert: true
 introduction:
   introText: >-
     The Mill has reached a new chapter in 2020, offering the best place to stay
@@ -55,10 +57,10 @@ rooms:
         - Nespresso coffee machine
         - Overlooking drive and garden
         - Sitting area
-      roomName: The Studio
       roomImages:
         - roomImage: /img/studio@2x.jpg
           roomImageAlt: a large room with four poster bed and rolltop bath
+      roomName: The Studio
     - price: From €60 per person
       roomHighlights:
         - 168 sq feet
@@ -219,11 +221,12 @@ aboutUs:
 
 
     Our new chapter begins in 2020.
+  profileImage: /img/splash-image-large@2x.jpg
   title: About us
   title2: The story of The Mill
-  profileImage: /img/splash-image-large@2x.jpg
 'footer,':
   awardImages:
     - awardImage: /img/mckenna_plaque_2020.png
     - awardImage: /img/michelin.png
 ---
+
