@@ -9,6 +9,7 @@ const Footer = ({ data }) => {
   const awardImages = images.map(({ awardImage }, idx) => {
     return (
       <Image
+        key={idx}
         fixed={awardImage.childImageSharp.fixed}
         alt=""
         className="award__image"

@@ -9,6 +9,7 @@ import Experiences from '../components/Experiences';
 import Gallery from '../components/Gallery';
 import AboutUs from '../components/AboutUs';
 import Footer from '../components/Footer';
+import Map from '../components/Map';
 
 const WebFont = typeof window !== `undefined` ? require('webfontloader') : null;
 
@@ -17,8 +18,8 @@ class IndexPageTemplate extends React.Component {
     if (typeof window !== 'undefined') {
       WebFont.load({
         google: {
-          families: ['Montserrat', 'Playfair Display', 'sans-serif']
-        }
+          families: ['Montserrat', 'Playfair Display', 'sans-serif'],
+        },
       });
     }
   }
@@ -40,6 +41,8 @@ class IndexPageTemplate extends React.Component {
           <Gallery />
 
           <AboutUs />
+
+          <Map />
 
           <Footer />
         </main>
