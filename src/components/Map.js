@@ -184,7 +184,9 @@ export default function Map() {
 
   return (
     <section id="find-us" className="no-padding no-margin">
-      <h2>Find us</h2>
+      <div className="with-padding">
+        <h2>Find us</h2>
+      </div>
       <div style={{ height: '40vh', width: '100%' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: 'AIzaSyB0NyLEx5VVudy1pV4VuECcr6TqvMmcZQU' }}
