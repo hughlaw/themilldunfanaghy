@@ -53,7 +53,19 @@ const Rooms = ({ data }) => {
         />
       </div>
 
-      <div className="restricted-width">{frontmatter.rooms.intro2}</div>
+      <div className="restricted-width">
+        {frontmatter.rooms.intro2subtitle && (
+          <h3>{frontmatter.rooms.intro2subtitle}</h3>
+        )}
+        {frontmatter.rooms.intro2}
+      </div>
+
+      <div className="restricted-width">
+        {frontmatter.rooms.intro3subtitle && (
+          <h3>{frontmatter.rooms.intro3subtitle}</h3>
+        )}
+        {frontmatter.rooms.intro3}
+      </div>
 
       <div className="grid room-grid restricted-width">{rooms}</div>
 
@@ -76,7 +88,10 @@ export default (props) => (
             title
             rooms {
               intro1
+              intro2subtitle
               intro2
+              intro3subtitle
+              intro3
               title
               roomInfo {
                 price
@@ -86,7 +101,7 @@ export default (props) => (
                 roomImages {
                   roomImage {
                     childImageSharp {
-                      fluid {
+                      fluid(maxHeight: 400, maxWidth: 600, cropFocus: ENTROPY) {
                         ...GatsbyImageSharpFluid
                       }
                     }

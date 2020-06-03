@@ -74,9 +74,13 @@ export default (props) => (
               galleryImage {
                 childImageSharp {
                   fluid(
+                    maxWidth: 1200
+                    cropFocus: ENTROPY
+                    maxHeight: 550
+                    fit: COVER
                     quality: 80
                     webpQuality: 80
-                    jpegQuality: 80
+                    jpegQuality: 90
                     jpegProgressive: true
                   ) {
                     ...GatsbyImageSharpFluid

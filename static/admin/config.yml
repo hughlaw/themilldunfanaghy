@@ -65,6 +65,7 @@ collections:
                 name: introText
                 widget: markdown
                 buttons: ['bulleted-list', 'numbered-list']
+                editorComponents: []
               - label: Opening dates
                 name: openingDatesText
                 widget: string
@@ -86,11 +87,27 @@ collections:
                 widget: markdown
                 required: false
                 buttons: ['bulleted-list', 'numbered-list']
+                editorComponents: []
+              - label: Sub title
+                name: intro2subtitle
+                required: false
+                widget: string
               - label: Text
                 name: intro2
                 widget: markdown
                 required: false
                 buttons: ['bulleted-list', 'numbered-list']
+                editorComponents: []
+              - label: Sub title
+                name: intro3subtitle
+                required: false
+                widget: string
+              - label: Text
+                name: intro3
+                widget: markdown
+                required: false
+                buttons: ['bulleted-list', 'numbered-list']
+                editorComponents: []
               - label: 'Room information'
                 allow_add: false
                 name: roomInfo
@@ -137,6 +154,7 @@ collections:
                   name: openingText,
                   widget: markdown,
                   buttons: ['bulleted-list', 'numbered-list'],
+                  editorComponents: [],
                 }
               - { label: Image, name: foodImage1, widget: image }
               - {
@@ -144,6 +162,7 @@ collections:
                   name: dividerText1,
                   widget: markdown,
                   buttons: ['bulleted-list', 'numbered-list'],
+                  editorComponents: [],
                 }
               - { label: Image, name: foodImage2, widget: image }
               - {
@@ -151,6 +170,7 @@ collections:
                   name: dividerText2,
                   widget: markdown,
                   buttons: ['bulleted-list', 'numbered-list'],
+                  editorComponents: [],
                 }
               - { label: Image, name: foodImage3, widget: image }
               - label: 'Menu items'
@@ -183,6 +203,7 @@ collections:
                   name: secondaryText,
                   widget: markdown,
                   buttons: ['bulleted-list', 'numbered-list'],
+                  editorComponents: [],
                 }
 
           - label: Gallery Images
@@ -210,6 +231,7 @@ collections:
                   name: aboutUsText,
                   widget: markdown,
                   buttons: ['bulleted-list', 'numbered-list'],
+                  editorComponents: [],
                 }
               - { label: Profile image, name: profileImage, widget: image }
               - { label: Title, name: title2, widget: string }
@@ -218,6 +240,7 @@ collections:
                   name: aboutUsText2,
                   widget: markdown,
                   buttons: ['bulleted-list', 'numbered-list'],
+                  editorComponents: [],
                 }
 
           - label: Footer

@@ -6,11 +6,18 @@ import prevIconPng from '../img/slideshow/prev-arrow@2x.png';
 import nextIconSvg from '../img/slideshow/next-arrow.svg';
 import nextIconPng from '../img/slideshow/next-arrow@2x.png';
 
-export default function SiemaGallery({ images, idx }) {
+export default function SiemaGallery({ images, idx, fixed }) {
   const slideshowRef = useRef(null);
 
   const imageCollection = images.map((image, i) => {
-    return (
+    return fixed ? (
+      <Image
+        fixed={image.roomImage.childImageSharp.fixed}
+        className="siema__image card__image"
+        alt={image.roomImageAlt}
+        key={i}
+      />
+    ) : (
       <Image
         fluid={image.roomImage.childImageSharp.fluid}
         className="siema__image card__image"
