@@ -31,7 +31,7 @@ rooms:
     ![](/img/image1 (2) - Copy.jpeg)
 
 
-    1. ```
+    1.   ```
 
        ```
 
@@ -46,12 +46,6 @@ rooms:
 
     From our carefully curated Antiques, Egginton paintings, books and
     furniture, all our bedrooms are unique.
-
-
-    We now welcome our canine friends to The Mill.  With such great walks in the
-    area it seems a shame to leave your dog at home which is why we have two
-    rooms where we allow dogs to stay.  Doggy  Guidelines can be viewed in more
-    detail below.
   intro2: >-
     Of course, they all feature TV's, heavenly mattresses, complimentary wifi
     but its the wee added touches that make the difference.
@@ -60,6 +54,22 @@ rooms:
     A welcome with coffee and homebaking, complimentary water, wine, homemade
     oaties for your room and fresh milk when you want it. Our larger rooms also
     have a Nepresso machine.
+
+
+    We now welcome our canine friends to The Mill.  With such great walks in the
+    area it seems a shame to leave your dog at home which is why we have two
+    rooms where we allow dogs to stay. 
+
+
+    Doggy Guidelines.
+
+
+    Our dogs are very much part of our life here and so your dog is more than
+    welcome at The Mill. As we have only two doggy friendly rooms please email
+    to book. With notice we will provide walking information, dog water/food
+    bowls,  drying towel, lead and poo bags. We have a large safe garden for the
+    early morning exercise. We ask you to keep your dog on the lead inside the
+    house and only in the conservatory downstairs.
   roomInfo:
     - price: From €80 per person
       roomHighlights:
@@ -111,6 +121,7 @@ rooms:
         - Kingsize bed with ensuite shower
         - Lake view
         - Nespresso coffee machine
+        - Dog Friendly Room
       roomImages:
         - roomImage: /img/casey@2x.jpg
           roomImageAlt: The bed in the Casey room
@@ -122,6 +133,7 @@ rooms:
         - Ensuite bath and shower
         - Overlooking trees
         - Nespresso coffee machine
+        - Dog Friendly room.
       roomImages:
         - roomImage: /img/marfagh@2x.jpg
           roomImageAlt: The bed in the Marfagh room
@@ -136,6 +148,8 @@ rooms:
       roomImages:
         - roomImage: /img/corgannive@2x.jpg
           roomImageAlt: The bed in the Corgannive room
+        - roomImage: /img/image1 (2) - Copy.jpeg
+          roomImageAlt: 'Bailey, our Golden Retriever,  in Corgannive.'
       roomName: Corgannive
   title: Our rooms
 foodAndDrink:
