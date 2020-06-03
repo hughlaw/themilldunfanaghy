@@ -218,6 +218,12 @@ gallery:
     galleryImage: /img/muckish-in-the-winter-large@2x.jpg
   - altText: Horses running along a beach
     galleryImage: /img/horses-on-the-beach-large@2x.jpg
+  - altText: Killyhoey Beach from Horn Head
+    galleryImage: /img/DSC_0531.JPG
+  - altText: 'The New Lake, Dunfanaghy'
+    galleryImage: /img/DSC_0446.JPG
+  - altText: View from front lawn
+    galleryImage: /img/IMG_5536.jpg
 aboutUs:
   aboutUsText: >-
     Susan and Derek are no strangers to the hospitality world having spent 20
