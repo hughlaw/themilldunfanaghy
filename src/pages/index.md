@@ -28,19 +28,6 @@ introduction:
 divider1: /img/new-lake-in-the-mist-large@2x.jpg
 rooms:
   intro1: >-
-    ![](/img/image1 (2) - Copy.jpeg)
-
-
-    1.   ```
-
-       ```
-
-       ![]()
-
-       ```
-
-       ```
-
     Our rooms at The Mill are named after our local townlands with the exception
     of The Studio, which was Susan's grandfather, Frank Egginton's painting
     studio.
