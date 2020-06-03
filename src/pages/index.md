@@ -28,6 +28,13 @@ introduction:
 divider1: /img/new-lake-in-the-mist-large@2x.jpg
 rooms:
   intro1: >-
+    ![](/img/image1 (2) - Copy.jpeg)
+
+
+    1. ```
+
+       ```
+
     Our rooms at The Mill are named after our local townlands with the exception
     of The Studio, which was Susan's grandfather, Frank Egginton's painting
     studio.
@@ -39,6 +46,12 @@ rooms:
 
     From our carefully curated Antiques, Egginton paintings, books and
     furniture, all our bedrooms are unique.
+
+
+    We now welcome our canine friends to The Mill.  With such great walks in the
+    area it seems a shame to leave your dog at home which is why we have two
+    rooms where we allow dogs to stay.  Doggy  Guidelines can be viewed in more
+    detail below.
   intro2: >-
     Of course, they all feature TV's, heavenly mattresses, complimentary wifi
     but its the wee added touches that make the difference.
