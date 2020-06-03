@@ -28,6 +28,19 @@ introduction:
 divider1: /img/new-lake-in-the-mist-large@2x.jpg
 rooms:
   intro1: >-
+    ![](/img/image1 (2) - Copy.jpeg)
+
+
+    1.   ```
+
+       ```
+
+       ![]()
+
+       ```
+
+       ```
+
     Our rooms at The Mill are named after our local townlands with the exception
     of The Studio, which was Susan's grandfather, Frank Egginton's painting
     studio.
@@ -47,9 +60,6 @@ rooms:
     A welcome with coffee and homebaking, complimentary water, wine, homemade
     oaties for your room and fresh milk when you want it. Our larger rooms also
     have a Nepresso machine.
-
-
-    ![](/img/image1 (2) - Copy.jpeg)
 
 
     We now welcome our canine friends to The Mill.  With such great walks in the
@@ -142,10 +152,10 @@ rooms:
         - Overlooking the trees
         - Nespresso coffee machine
       roomImages:
-        - roomImage: /img/corgannive@2x.jpg
-          roomImageAlt: The bed in the Corgannive room
         - roomImage: /img/image1 (2) - Copy.jpeg
           roomImageAlt: 'Bailey, our Golden Retriever,  in Corgannive.'
+        - roomImage: /img/corgannive@2x.jpg
+          roomImageAlt: The bed in the Corgannive room
       roomName: Corgannive
   title: Our rooms
 foodAndDrink:
