@@ -97,9 +97,12 @@ export default (props) => (
                 awardImage {
                   childImageSharp {
                     fixed(
-                      quality: 5
                       width: 125
                       height: 125
+                      cropFocus: CENTER
+                      fit: CONTAIN
+                      quality: 80
+                      trim: 1.5
                       background: "rgba(255,255,255,1)"
                     ) {
                       ...GatsbyImageSharpFixed
