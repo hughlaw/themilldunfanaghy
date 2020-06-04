@@ -128,6 +128,8 @@ rooms:
       roomImages:
         - roomImage: /img/marfagh@2x.jpg
           roomImageAlt: The bed in the Marfagh room
+        - roomImage: /img/IMG_6167.jpg
+          roomImageAlt: Bailey and Jackson in the car park
       roomName: Marfagh
     - price: From €65 per person
       roomHighlights:
@@ -224,9 +226,9 @@ gallery:
     galleryImage: /img/IMG_5536.jpg
 aboutUs:
   aboutUsText: >-
-    Susan and Derek are no strangers to the hospitality world having spent 20
-    years creating and running their award winning restaurant with rooms. They
-    have now turned their attention to providing a very special place to stay.
+    We  are no strangers to the hospitality world having spent 20 years creating
+    and running our award winning restaurant with rooms. We have now turned our
+    attention to providing a very special place to stay.
 
 
     With so much on offer on our doorstep we hope you love this area as much as
@@ -252,5 +254,8 @@ aboutUs:
   awardImages:
     - awardImage: /img/mckenna_plaque_2020.png
     - awardImage: /img/michelin.png
+    - awardImage: /img/GC-Recommended-Logo-2020.png
+    - awardImage: /img/download.jpg
+    - awardImage: /img/Failte-Ireland-Logo.jpg
 ---
 
