@@ -47,11 +47,20 @@ rooms:
     A welcome with coffee and homebaking, complimentary water, wine, homemade
     oaties for your room and fresh milk when you want it. Our larger rooms also
     have a Nepresso machine.
-
-
+  intro2subtitle: ''
+  intro3: >-
     We now welcome our canine friends to The Mill.  With such great walks in the
     area it seems a shame to leave your dog at home which is why we have two
     rooms where we allow dogs to stay.
+
+
+    Our dogs are very much part of our life here and so your dog is more than
+    welcome at The Mill. As we have only two doggy friendly rooms please email
+    to book. With notice we will provide walking information, dog water/food
+    bowls,  drying towel, lead and poo bags. We have a large safe garden for the
+    early morning exercise. We ask you to keep your dog on the lead inside the
+    house and only in the conservatory downstairs.
+  intro3subtitle: Doggy Guidelines
   roomInfo:
     - price: From €80 per person
       roomHighlights:
@@ -134,15 +143,6 @@ rooms:
           roomImageAlt: The bed in the Corgannive room
       roomName: Corgannive
   title: Our rooms
-  intro3: >-
-    Our dogs are very much part of our life here and so your dog is more than
-    welcome at The Mill. As we have only two doggy friendly rooms please email
-    to book. With notice we will provide walking information, dog water/food
-    bowls,  drying towel, lead and poo bags. We have a large safe garden for the
-    early morning exercise. We ask you to keep your dog on the lead inside the
-    house and only in the conservatory downstairs.
-  intro3subtitle: Doggy Guidelines
-  intro2subtitle: ''
 foodAndDrink:
   dividerText1: >-
     For a more hearty start to the day, a vast range that includes a Full Irish
@@ -253,3 +253,4 @@ aboutUs:
     - awardImage: /img/mckenna_plaque_2020.png
     - awardImage: /img/michelin.png
 ---
+
