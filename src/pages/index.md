@@ -139,10 +139,10 @@ rooms:
         - Overlooking the trees
         - Nespresso coffee machine
       roomImages:
-        - roomImage: /img/image1 (2) - Copy.jpeg
-          roomImageAlt: 'Bailey, our Golden Retriever,  in Corgannive.'
         - roomImage: /img/corgannive@2x.jpg
           roomImageAlt: The bed in the Corgannive room
+        - roomImage: /img/image1 (2) - Copy.jpeg
+          roomImageAlt: 'Bailey, our Golden Retriever,  in Corgannive.'
       roomName: Corgannive
   title: Our rooms
 foodAndDrink:
