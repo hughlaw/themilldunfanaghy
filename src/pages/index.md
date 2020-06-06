@@ -3,12 +3,11 @@ pageIdentifier: homepage
 templateKey: index
 splashImage: /img/splash-image-large@2x.jpg
 alert:
-  alertText: >-
-    Due to recent developments with the worldwide pandemic, we are currently
-    closed. We are due to reopen on the 20th July. If you would like postpone a
-    booking already made  or if we can help with your  holiday plans please do
-    get in touch.  We look forward to welcoming guests back to The Mill and
-    Dunfanaghy.
+  alertText: Due the recent developments with the worldwide pandemic we are
+    temporarily closed, however due to recent easing of COVID-19 restrictions we
+    will hopefully reopen on the 29th June. If you would like postpone a booking
+    already made  or if we can help with your  holiday plans please do get in
+    touch.  We look forward to welcoming guests back to The Mill and Dunfanaghy.
   alertTitle: COVID-19
   showAlert: true
 introduction:
@@ -17,13 +16,10 @@ introduction:
     if you want to bridge the gap between a large hotel and a B&B.
 
 
-    A home from home, we offer seven individual rooms that range from cosy to
-    cavernous.
+    A home from home, we offer seven individual rooms that range from cosy to cavernous.
 
 
-    Start the day with our award winning breakfast, relax in our many lounge
-    areas and with our extensive local knowledge, we can show you why we think
-    this hidden corner of Donegal is the best place to be.
+    Start the day with our award winning breakfast, relax in our many lounge areas and with our extensive local knowledge, we can show you why we think this hidden corner of Donegal is the best place to be.
   openingDatesText: We are open from March until November.
 divider1: /img/new-lake-in-the-mist-large@2x.jpg
 rooms:
@@ -33,33 +29,24 @@ rooms:
     studio.
 
 
-    We hope we have created a warm homely feel, a place to relax, unwind and
-    recharge.
+    We hope we have created a warm homely feel, a place to relax, unwind and recharge.
 
 
-    From our carefully curated Antiques, Egginton paintings, books and
-    furniture, all our bedrooms are unique.
+    From our carefully curated Antiques, Egginton paintings, books and furniture, all our bedrooms are unique.
   intro2: >-
     Of course, they all feature TV's, heavenly mattresses, complimentary wifi
     but its the wee added touches that make the difference.
 
 
-    A welcome with coffee and homebaking, complimentary water, wine, homemade
-    oaties for your room and fresh milk when you want it. Our larger rooms also
-    have a Nepresso machine.
-  intro2subtitle: ''
+    A welcome with coffee and homebaking, complimentary water, wine, homemade oaties for your room and fresh milk when you want it. Our larger rooms also have a Nepresso machine.
+  intro2subtitle: ""
   intro3: >-
     We now welcome our canine friends to The Mill.  With such great walks in the
     area it seems a shame to leave your dog at home which is why we have two
     rooms where we allow dogs to stay.
 
 
-    Our dogs are very much part of our life here and so your dog is more than
-    welcome at The Mill. As we have only two doggy friendly rooms please email
-    to book. With notice we will provide walking information, dog water/food
-    bowls,  drying towel, lead and poo bags. We have a large safe garden for the
-    early morning exercise. We ask you to keep your dog on the lead inside the
-    house and only in the conservatory downstairs.
+    Our dogs are very much part of our life here and so your dog is more than welcome at The Mill. As we have only two doggy friendly rooms please email to book. With notice we will provide walking information, dog water/food bowls,  drying towel, lead and poo bags. We have a large safe garden for the early morning exercise. We ask you to keep your dog on the lead inside the house and only in the conservatory downstairs.
   intro3subtitle: Doggy Guidelines
   roomInfo:
     - price: From €80 per person
@@ -142,46 +129,43 @@ rooms:
         - roomImage: /img/corgannive@2x.jpg
           roomImageAlt: The bed in the Corgannive room
         - roomImage: /img/image1 (2) - Copy.jpeg
-          roomImageAlt: 'Bailey, our Golden Retriever,  in Corgannive.'
+          roomImageAlt: Bailey, our Golden Retriever,  in Corgannive.
       roomName: Corgannive
   title: Our rooms
 foodAndDrink:
-  dividerText1: >-
-    For a more hearty start to the day, a vast range that includes a Full Irish
-    Breakfast, Vegetarian breakfast, Smoked salmon, Egg dishes and Fresh fish
-    from The Bay can be ordered from the kitchen.
-  dividerText2: >-
-    On a lovely Summer's evening, if you fancy a glass of Prosecco at one of our
-    many romantic seating areas in the garden , we do have an Honesty Bar for to
-    avail of, offering a selection of fine wines and Donegal Craft Beers . Or of
-    course by the Open fire on cold, wet night.
+  dividerText1: For a more hearty start to the day, a vast range that includes a
+    Full Irish Breakfast, Vegetarian breakfast, Smoked salmon, Egg dishes and
+    Fresh fish from The Bay can be ordered from the kitchen.
+  dividerText2: On a lovely Summer's evening, if you fancy a glass of Prosecco at
+    one of our many romantic seating areas in the garden , we do have an Honesty
+    Bar for to avail of, offering a selection of fine wines and Donegal Craft
+    Beers . Or of course by the Open fire on cold, wet night.
   foodImage1: /img/healthy-breakfast-large@2x.jpg
   foodImage2: /img/fried-breakfast-large@2x.jpg
   foodImage3: /img/prosseco-and-olives-large@2x.jpg
   menuItems:
-    - description: >-
-        Burrowe’s Pork Sausages & Home Cured Bacon, Free Range Fried Egg, Potato
-        Bread, Tomato, Loughrane’s Black/White Pudding & Mushrooms.
+    - description: Burrowe’s Pork Sausages & Home Cured Bacon, Free Range Fried Egg,
+        Potato Bread, Tomato, Loughrane’s Black/White Pudding & Mushrooms.
       title: Full Irish Breakfast
     - description: Served with Whiskey & Cream or Honey & Mixed Seeds.
       title: Organic Porridge
-    - description: 'Tomato, Beans, Fried Organic Egg, Mushrooms & Potato Bread.'
+    - description: Tomato, Beans, Fried Organic Egg, Mushrooms & Potato Bread.
       title: Vegetarian Breakfast
     - description: Served with with crispy Bacon & Maple Syrup.
       title: Pancakes
-    - description: 'Served with Banana, Hazelnut Praline & Maple Syrup.'
+    - description: Served with Banana, Hazelnut Praline & Maple Syrup.
       title: Pancakes
     - title: Poached Egg with Fish
-    - description: 'Served with Bacon, Mushroom or Tomato.'
+    - description: Served with Bacon, Mushroom or Tomato.
       title: Omelette
-    - description: 'Poached, Scrambled or Boiled'
+    - description: Poached, Scrambled or Boiled
       title: Eggs
     - title: Scrambled Eggs with Smoked Salmon
-    - description: 'Poached Eggs, Ham, Hollandaise Sauce on Toasted Muffin.'
+    - description: Poached Eggs, Ham, Hollandaise Sauce on Toasted Muffin.
       title: Eggs Benedict
-    - description: 'Poaches Eggs, Smoked Salmon, Hollandaise on Toasted Muffin.'
+    - description: Poaches Eggs, Smoked Salmon, Hollandaise on Toasted Muffin.
       title: Eggs Royale
-    - description: 'Poached Eggs, Mozzarella, Sliced Tomato & Hollandaise Sauce.'
+    - description: Poached Eggs, Mozzarella, Sliced Tomato & Hollandaise Sauce.
       title: Caprese Eggs Benedict
     - title: Fish Omelette
   openingText: >-
@@ -190,16 +174,13 @@ foodAndDrink:
     the New Lake, served from 8.30am - 10 am.
 
 
-    You will find a wide choice of cereal, delicious Fruit salad, Natural
-    yogurt, Carrageen Moss, Homemade breads , Irish cheeses, juices and much
-    more.
+    You will find a wide choice of cereal, delicious Fruit salad, Natural yogurt, Carrageen Moss, Homemade breads , Irish cheeses, juices and much more.
   title: Food & drink
 experiences:
   dividerExperiences: /img/boats-on-the-new-lake-large@2x.jpg
-  openingText: >-
-    From a relaxing afternoon browsing the many gift shops in town or cantering
-    along the amazing Tramore beach, there are activities and experiences to
-    suit everyone.
+  openingText: From a relaxing afternoon browsing the many gift shops in town or
+    cantering along the amazing Tramore beach, there are activities and
+    experiences to suit everyone.
   secondaryText: >-
     With our local knowledge we can help you experience all the highlights that
     Dunfanaghy area has to offer including superb Blue Flag beaches, golf
@@ -220,7 +201,7 @@ gallery:
     galleryImage: /img/horses-on-the-beach-large@2x.jpg
   - altText: Killyhoey Beach from Horn Head
     galleryImage: /img/DSC_0531.JPG
-  - altText: 'The New Lake, Dunfanaghy'
+  - altText: The New Lake, Dunfanaghy
     galleryImage: /img/DSC_0446.JPG
   - altText: View from front lawn
     galleryImage: /img/IMG_5536.jpg
@@ -231,8 +212,7 @@ aboutUs:
     attention to providing a very special place to stay.
 
 
-    With so much on offer on our doorstep we hope you love this area as much as
-    we do.
+    With so much on offer on our doorstep we hope you love this area as much as we do.
   aboutUsText2: >-
     The Mill was bought in 1949 by Susan's Grandfather, Frant Egginton, a famous
     watercolour artist.
@@ -241,16 +221,14 @@ aboutUs:
     He converted the flax mill into his studio and home until his death in 1990.
 
 
-    Work began in 1999 to modernise and enlarge the house to accommodate a
-    restaurant, 6 ensuite rooms and a living area. In 2001 another room,  The
-    Studio, was added.
+    Work began in 1999 to modernise and enlarge the house to accommodate a restaurant, 6 ensuite rooms and a living area. In 2001 another room,  The Studio, was added.
 
 
     Our new chapter begins in 2020.
   profileImage: /img/splash-image-large@2x.jpg
   title: About us
   title2: The story of The Mill
-'footer,':
+"footer,":
   awardImages:
     - awardImage: /img/mckenna_plaque_2020.png
     - awardImage: /img/michelin.png
@@ -258,4 +236,3 @@ aboutUs:
     - awardImage: /img/download.jpg
     - awardImage: /img/Failte-Ireland-Logo.jpg
 ---
-
