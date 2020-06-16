@@ -4,7 +4,7 @@ templateKey: index
 splashImage: /img/splash-image-large@2x.jpg
 alert:
   alertText: "We are busy working towards reopening on the 29th June, ensuring our
-    guests have a safe and relaxing stay  by following Failte Guidleines for the
+    guests have a safe and relaxing stay  by following Failte Guidelines for the
     reopening of B&B'S. If you need any further information please do get in
     touch. "
   alertTitle: COVID-19
