@@ -3,11 +3,10 @@ pageIdentifier: homepage
 templateKey: index
 splashImage: /img/splash-image-large@2x.jpg
 alert:
-  alertText: Due the recent developments with the worldwide pandemic we are
-    temporarily closed, however due to recent easing of COVID-19 restrictions we
-    will hopefully reopen on the 29th June. If you would like postpone a booking
-    already made  or if we can help with your  holiday plans please do get in
-    touch.  We look forward to welcoming guests back to The Mill and Dunfanaghy.
+  alertText: "We are busy working towards reopening on the 29th June, ensuring our
+    guests have a safe and relaxing stay  by following Failte Guidleines for the
+    reopening of B&B'S. If you need any further information please do get in
+    touch. "
   alertTitle: COVID-19
   showAlert: true
 introduction:
