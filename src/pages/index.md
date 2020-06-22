@@ -45,7 +45,7 @@ rooms:
     rooms where we allow dogs to stay.
 
 
-    Our dogs are very much part of our life here and so your dog is more than welcome at The Mill. As we have only two doggy friendly rooms please email to book. With notice we will provide walking information, dog water/food bowls,  drying towel, lead and poo bags. We have a large safe garden for the early morning exercise. We ask you to keep your dog on the lead inside the house and only in the conservatory downstairs.
+    Our dogs are very much part of our life here and so your dog is more than welcome at The Mill. As we have only two doggy friendly rooms please email to book. With notice we will provide walking information, dog water/food bowls,  drying towel, lead and poo bags. Please bring your own bedding . We have a large safe garden for the early morning exercise. We ask you to keep your dog on the lead inside the house and only in the conservatory downstairs.
   intro3subtitle: Doggy Guidelines
   roomInfo:
     - price: From €80 per person
