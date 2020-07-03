@@ -194,7 +194,7 @@ collections:
               - {
                   label: Text,
                   name: openingText,
-                  widget,
+                  widget: markdown,
                   buttons: ['bulleted-list', 'numbered-list'],
                 }
               - { label: Image, name: dividerExperiences, widget: image }
