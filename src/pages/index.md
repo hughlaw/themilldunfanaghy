@@ -3,12 +3,11 @@ pageIdentifier: homepage
 templateKey: index
 splashImage: /img/splash-image-large@2x.jpg
 alert:
-  alertText: "We are busy working towards reopening on the 29th June, ensuring our
-    guests have a safe and relaxing stay  by following Failte Guidelines for the
-    reopening of B&B'S. If you need any further information please do get in
-    touch. "
+  alertText: "We are delighted to be welcoming guests back to The Mill, with
+    Failte Guidelines in place we can provide a safe and relaxing break away.
+    Book directly for best B&B prices or get in touch by phone or email. "
   alertTitle: COVID-19
-  showAlert: true
+  showAlert: false
 introduction:
   introText: >-
     The Mill has reached a new chapter in 2020, offering the best place to stay
@@ -48,7 +47,7 @@ rooms:
     Our dogs are very much part of our life here and so your dog is more than welcome at The Mill. As we have only two doggy friendly rooms please email to book. With notice we will provide walking information, dog water/food bowls,  drying towel, lead and poo bags. Please bring your own bedding . We have a large safe garden for the early morning exercise. We ask you to keep your dog on the lead inside the house and only in the conservatory downstairs.
   intro3subtitle: Doggy Guidelines
   roomInfo:
-    - price: From €80 per person
+    - price: From €80 per person Bed & Breakfast
       roomHighlights:
         - 396 sq feet
         - Kingsize four poster bed
@@ -71,7 +70,7 @@ rooms:
           roomImageAlt: The bed in the Figart room
       roomName: Figart
       soText: Single occupancy from €75
-    - price: From €60 per person
+    - price: From €60 per person Bed and Breakfast
       roomHighlights:
         - 137.5 sq feet
         - Double bed with ensuite shower
@@ -80,8 +79,8 @@ rooms:
         - roomImage: /img/rinclevin@2x.jpg
           roomImageAlt: The bed in the Rinclevin room
       roomName: Rinclevin
-      soText: Single occupancy from €75
-    - price: From €65 per person
+      soText: Single occupancy from €75 Bed and Breakfast
+    - price: From €65 per person Bed and Breakfast
       roomHighlights:
         - 196 sq feet
         - King size bed
@@ -92,7 +91,7 @@ rooms:
         - roomImage: /img/castlebane@2x.jpg
           roomImageAlt: The bed in the Castlebane room
       roomName: Castlebane
-    - price: From €65 per person
+    - price: From €65 per person Bed and Breakfast
       roomHighlights:
         - 176 sq feet
         - Kingsize bed with ensuite shower
@@ -103,7 +102,7 @@ rooms:
         - roomImage: /img/casey@2x.jpg
           roomImageAlt: The bed in the Casey room
       roomName: Casey
-    - price: From €65 per person
+    - price: From €65 per person Bed and Breakfast
       roomHighlights:
         - 187.5 sq feet
         - Double bed and single bed (twin option)
@@ -117,7 +116,7 @@ rooms:
         - roomImage: /img/IMG_6167.jpg
           roomImageAlt: Bailey and Jackson in the car park
       roomName: Marfagh
-    - price: From €65 per person
+    - price: From €65 per person Bed and Breakfast
       roomHighlights:
         - 187.5 sq feet
         - Kingsize bed and single bed (twin option)
