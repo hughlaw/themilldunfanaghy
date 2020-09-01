@@ -97,7 +97,6 @@ rooms:
         - Kingsize bed with ensuite shower
         - Lake view
         - Nespresso coffee machine
-        - Dog Friendly Room
       roomImages:
         - roomImage: /img/casey@2x.jpg
           roomImageAlt: The bed in the Casey room
@@ -123,6 +122,7 @@ rooms:
         - Ensuite bath and shower
         - Overlooking the trees
         - Nespresso coffee machine
+        - Dog Friendly room
       roomImages:
         - roomImage: /img/corgannive@2x.jpg
           roomImageAlt: The bed in the Corgannive room
