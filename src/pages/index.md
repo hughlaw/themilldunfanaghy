@@ -3,11 +3,12 @@ pageIdentifier: homepage
 templateKey: index
 splashImage: /img/splash-image-large@2x.jpg
 alert:
-  alertText: "We are delighted to be welcoming guests back to The Mill, with
-    Failte Guidelines in place we can provide a safe and relaxing break away.
-    Book directly for best B&B prices or get in touch by phone or email. "
+  alertText: Due to the recent Covid-19 restrictions we are unfortunately
+    temporarily closed until the 27th October. We will hopefully reopen for
+    Halloween week. Our online booking system is available for bookings or
+    please email info@themilldunfanaghy.com.
   alertTitle: COVID-19
-  showAlert: false
+  showAlert: true
 introduction:
   introText: >-
     The Mill has reached a new chapter in 2020, offering the best place to stay
