@@ -3,10 +3,10 @@ pageIdentifier: homepage
 templateKey: index
 splashImage: /img/splash-image-large@2x.jpg
 alert:
-  alertText: Due to the recent Covid-19 restrictions we are unfortunately
-    temporarily closed until the 27th October. We will hopefully reopen for
-    Halloween week. Our online booking system is available for bookings or
-    please email info@themilldunfanaghy.com.
+  alertText: "Due to the continuing restrictions, we have now decided to close for
+    the season. We hope to reopen in mid February 2021 . Our online diary will
+    be open for the next season very soon.  Thank you for your support during
+    the year and hopefully see you during 2021. "
   alertTitle: COVID-19
   showAlert: true
 introduction:
