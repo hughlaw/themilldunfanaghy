@@ -3,16 +3,16 @@ pageIdentifier: homepage
 templateKey: index
 splashImage: /img/splash-image-large@2x.jpg
 alert:
-  alertText: "Due to the continuing restrictions, we have now decided to close for
-    the season. We hope to reopen in mid February 2021 . Our online diary will
-    be open for the next season very soon.  Thank you for your support during
-    the year and hopefully see you during 2021. "
-  alertTitle: COVID-19
+  alertText: "We are now closed for the season, reopening early March 2021. Thank
+    you all for supporting us during a very different and difficult 2020. We are
+    now looking forward to next year when things will hopefully return to some
+    normality and we can welcome guests back to the best corner of Ireland! "
+  alertTitle: ""
   showAlert: true
 introduction:
   introText: >-
-    The Mill has reached a new chapter in 2020, offering the best place to stay
-    if you want to bridge the gap between a large hotel and a B&B.
+    The Mill  reached a new chapter in 2020, offering the best place to stay if
+    you want to bridge the gap between a large hotel and a B&B.
 
 
     A home from home, we offer seven individual rooms that range from cosy to cavernous.
@@ -48,7 +48,7 @@ rooms:
     Our dogs are very much part of our life here and so your dog is more than welcome at The Mill. As we have only two doggy friendly rooms please email to book. With notice we will provide walking information, dog water/food bowls,  drying towel, lead and poo bags. Please bring your own bedding . We have a large safe garden for the early morning exercise. We ask you to keep your dog on the lead inside the house and only in the conservatory downstairs.
   intro3subtitle: Doggy Guidelines
   roomInfo:
-    - price: From €80 per person Bed & Breakfast
+    - price: From €185 per room per night B&B
       roomHighlights:
         - 396 sq feet
         - Kingsize four poster bed
@@ -61,7 +61,7 @@ rooms:
         - roomImage: /img/studio@2x.jpg
           roomImageAlt: a large room with four poster bed and rolltop bath
       roomName: The Studio
-    - price: From €60 per person
+    - price: From €130 per room per night B&B
       roomHighlights:
         - 168 sq feet
         - Double bed with ensuite bath and shower
@@ -70,8 +70,8 @@ rooms:
         - roomImage: /img/figart@2x.jpg
           roomImageAlt: The bed in the Figart room
       roomName: Figart
-      soText: Single occupancy from €75
-    - price: From €60 per person Bed and Breakfast
+      soText: Single occupancy from €95
+    - price: From €130 per room per night B&B
       roomHighlights:
         - 137.5 sq feet
         - Double bed with ensuite shower
@@ -80,8 +80,8 @@ rooms:
         - roomImage: /img/rinclevin@2x.jpg
           roomImageAlt: The bed in the Rinclevin room
       roomName: Rinclevin
-      soText: Single occupancy from €75 Bed and Breakfast
-    - price: From €65 per person Bed and Breakfast
+      soText: Single occupancy from €95 B&B
+    - price: From €150 per room per night B&B
       roomHighlights:
         - 196 sq feet
         - King size bed
@@ -92,7 +92,7 @@ rooms:
         - roomImage: /img/castlebane@2x.jpg
           roomImageAlt: The bed in the Castlebane room
       roomName: Castlebane
-    - price: From €65 per person Bed and Breakfast
+    - price: From €150 per room per night B&B
       roomHighlights:
         - 176 sq feet
         - Kingsize bed with ensuite shower
@@ -102,7 +102,7 @@ rooms:
         - roomImage: /img/casey@2x.jpg
           roomImageAlt: The bed in the Casey room
       roomName: Casey
-    - price: From €65 per person Bed and Breakfast
+    - price: From €150 per room per night B&B
       roomHighlights:
         - 187.5 sq feet
         - Double bed and single bed (twin option)
@@ -116,7 +116,7 @@ rooms:
         - roomImage: /img/IMG_6167.jpg
           roomImageAlt: Bailey and Jackson in the car park
       roomName: Marfagh
-    - price: From €65 per person Bed and Breakfast
+    - price: From €150 per room per night B&B
       roomHighlights:
         - 187.5 sq feet
         - Kingsize bed and single bed (twin option)
