@@ -8,7 +8,7 @@ alert:
     now looking forward to next year when things will hopefully return to some
     normality and we can welcome guests back to the best corner of Ireland! "
   alertTitle: ""
-  showAlert: true
+  showAlert: false
 introduction:
   introText: >-
     The Mill  reached a new chapter in 2020, offering the best place to stay if
