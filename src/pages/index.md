@@ -37,7 +37,7 @@ rooms:
     but its the wee added touches that make the difference.
 
 
-    A welcome with coffee and homebaking, complimentary water, wine, homemade oaties for your room and fresh milk when you want it. Our larger rooms also have a Nepresso machine.
+    A welcome drink , complimentary water, wine, homemade oaties for your room and fresh milk when you want it. Our larger rooms also have a Nepresso machine.
   intro2subtitle: ""
   intro3: >-
     We now welcome our canine friends to The Mill.  With such great walks in the
@@ -133,8 +133,8 @@ rooms:
   title: Our rooms
 foodAndDrink:
   dividerText1: For a more hearty start to the day, a vast range that includes a
-    Full Irish Breakfast, Vegetarian breakfast, Smoked salmon, Egg dishes and
-    Fresh fish from The Bay can be ordered from the kitchen.
+    Full Irish Breakfast, Vegetarian breakfast, Egg's Benedict ( Mill style!) ,
+    Smoked salmon, Egg dishes and Smoked fish  can be ordered from the kitchen.
   dividerText2: On a lovely Summer's evening, if you fancy a glass of Prosecco at
     one of our many romantic seating areas in the garden , we do have an Honesty
     Bar for to avail of, offering a selection of fine wines and Donegal Craft
@@ -166,14 +166,13 @@ foodAndDrink:
       title: Eggs Royale
     - description: Poached Eggs, Mozzarella, Sliced Tomato & Hollandaise Sauce.
       title: Caprese Eggs Benedict
-    - title: Fish Omelette
   openingText: >-
     A very relaxed breakfast is truly the perfect way to start the day. Our
     award winning breakfast is served in our split level dining room overlooking
     the New Lake, served from 8.30am - 10 am.
 
 
-    You will find a wide choice of cereal, delicious Fruit salad, Natural yogurt, Carrageen Moss, Homemade breads , Irish cheeses, juices and much more.
+    You will find a wide choice of cereal, delicious Fruit salad, Natural yogurt, Carrageen Moss, Garden Rhubarb, Prunes, Homemade breads ,  juices and much more.
   title: Food & drink
 experiences:
   dividerExperiences: /img/boats-on-the-new-lake-large@2x.jpg
@@ -229,9 +228,6 @@ aboutUs:
   title2: The story of The Mill
 "footer,":
   awardImages:
-    - awardImage: /img/mckenna_plaque_2020.png
-    - awardImage: /img/michelin.png
-    - awardImage: /img/GC-Recommended-Logo-2020.png
     - awardImage: /img/download.jpg
     - awardImage: /img/Failte-Ireland-Logo.jpg
 ---
