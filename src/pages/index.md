@@ -102,7 +102,7 @@ rooms:
         - roomImage: /img/casey@2x.jpg
           roomImageAlt: The bed in the Casey room
       roomName: Casey
-    - price: From €150 per room per night B&B
+    - price: From €150 per room per night B&B (Triple room €200)
       roomHighlights:
         - 187.5 sq feet
         - Double bed and single bed (twin option)
@@ -116,7 +116,7 @@ rooms:
         - roomImage: /img/IMG_6167.jpg
           roomImageAlt: Bailey and Jackson in the car park
       roomName: Marfagh
-    - price: From €150 per room per night B&B
+    - price: From €150 per room per night B&B (Triple room €200)
       roomHighlights:
         - 187.5 sq feet
         - Kingsize bed and single bed (twin option)
