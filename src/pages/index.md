@@ -3,10 +3,7 @@ pageIdentifier: homepage
 templateKey: index
 splashImage: /img/splash-image-large@2x.jpg
 alert:
-  alertText: "We are now closed for the season, reopening early March 2021. Thank
-    you all for supporting us during a very different and difficult 2020. We are
-    now looking forward to next year when things will hopefully return to some
-    normality and we can welcome guests back to the best corner of Ireland! "
+  alertText: ""
   alertTitle: ""
   showAlert: false
 introduction:
@@ -19,7 +16,7 @@ introduction:
 
 
     Start the day with our award winning breakfast, relax in our many lounge areas and with our extensive local knowledge, we can show you why we think this hidden corner of Donegal is the best place to be.
-  openingDatesText: We are open from March until November.
+  openingDatesText: We are open from March until November, weekends only during low season.
 divider1: /img/new-lake-in-the-mist-large@2x.jpg
 rooms:
   intro1: >-
@@ -139,28 +136,27 @@ foodAndDrink:
     one of our many romantic seating areas in the garden , we do have an Honesty
     Bar for to avail of, offering a selection of fine wines and Donegal Craft
     Beers . Or of course by the Open fire on cold, wet night.
-  foodImage1: /img/healthy-breakfast-large@2x.jpg
-  foodImage2: /img/fried-breakfast-large@2x.jpg
-  foodImage3: /img/prosseco-and-olives-large@2x.jpg
+  foodImage1: /img/img_0857.jpg
+  foodImage2: /img/img_1452.jpg
+  foodImage3: /img/img_9341.jpg
   menuItems:
-    - description: Burrowe’s Pork Sausages & Home Cured Bacon, Free Range Fried Egg,
-        Potato Bread, Tomato, Loughrane’s Black/White Pudding & Mushrooms.
+    - description: McGettigan's Pork Sausages ,  Home Cured Bacon and Black and White
+        pudding,  Free Range Fried Egg, Potato Bread, Tomato & Mushrooms.
       title: Full Irish Breakfast
     - description: Served with Whiskey & Cream or Honey & Mixed Seeds.
       title: Organic Porridge
-    - description: Tomato, Beans, Fried Organic Egg, Mushrooms & Potato Bread.
+    - description: Tomato, Beans, Vegetarian pudding, Fried Organic Egg, Mushrooms &
+        Potato Bread.
       title: Vegetarian Breakfast
     - description: Served with with crispy Bacon & Maple Syrup.
       title: Pancakes
-    - description: Served with Banana, Hazelnut Praline & Maple Syrup.
-      title: Pancakes
-    - title: Poached Egg with Fish
+    - title: Poached Egg with Smoked Fish
     - description: Served with Bacon, Mushroom or Tomato.
       title: Omelette
     - description: Poached, Scrambled or Boiled
       title: Eggs
     - title: Scrambled Eggs with Smoked Salmon
-    - description: Poached Eggs, Ham, Hollandaise Sauce on Toasted Muffin.
+    - description: Poached Eggs, Ham Hock, Hollandaise sauce on Rosti potato.
       title: Eggs Benedict
     - description: Poaches Eggs, Smoked Salmon, Hollandaise on Toasted Muffin.
       title: Eggs Royale
@@ -195,8 +191,6 @@ gallery:
     galleryImage: /img/new-lake-at-sunset-large@2x.jpg
   - altText: A view of Muckish mountain on a cold winters day
     galleryImage: /img/muckish-in-the-winter-large@2x.jpg
-  - altText: Horses running along a beach
-    galleryImage: /img/horses-on-the-beach-large@2x.jpg
   - altText: Killyhoey Beach from Horn Head
     galleryImage: /img/DSC_0531.JPG
   - altText: The New Lake, Dunfanaghy
