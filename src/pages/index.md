@@ -1,7 +1,7 @@
 ---
 pageIdentifier: homepage
 templateKey: index
-splashImage: /img/splash-image-large@2x.jpg
+splashImage: /img/dji_0487.jpg
 alert:
   alertText: ""
   alertTitle: ""
@@ -217,11 +217,13 @@ aboutUs:
 
 
     Our new chapter begins in 2020.
-  profileImage: /img/splash-image-large@2x.jpg
+  profileImage: /img/dji_0487.jpg
   title: About us
   title2: The story of The Mill
 "footer,":
   awardImages:
     - awardImage: /img/download.jpg
     - awardImage: /img/Failte-Ireland-Logo.jpg
+    - awardImage: /img/georgina.png
+    - awardImage: /img/dji_0501.jpg
 ---
