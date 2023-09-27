@@ -58,7 +58,7 @@ rooms:
         - roomImage: /img/studio@2x.jpg
           roomImageAlt: a large room with four poster bed and rolltop bath
       roomName: The Studio
-    - price: From €150 per room per night B&B
+    - price: From €155 per room per night B&B
       roomHighlights:
         - 168 sq feet
         - Double bed with ensuite bath and shower
@@ -67,8 +67,8 @@ rooms:
         - roomImage: /img/figart@2x.jpg
           roomImageAlt: The bed in the Figart room
       roomName: Figart
-      soText: Single occupancy from €115
-    - price: From €150 per room per night B&B
+      soText: Single occupancy from €120
+    - price: From €155 per room per night B&B
       roomHighlights:
         - 137.5 sq feet
         - Double bed with ensuite shower
@@ -77,8 +77,8 @@ rooms:
         - roomImage: /img/rinclevin@2x.jpg
           roomImageAlt: The bed in the Rinclevin room
       roomName: Rinclevin
-      soText: Single occupancy from €115 B&B
-    - price: From €170 per room per night B&B
+      soText: Single occupancy from €120 B&B
+    - price: From €175 per room per night B&B
       roomHighlights:
         - 196 sq feet
         - King size bed
@@ -89,7 +89,7 @@ rooms:
         - roomImage: /img/castlebane@2x.jpg
           roomImageAlt: The bed in the Castlebane room
       roomName: Castlebane
-    - price: From €170 per room per night B&B
+    - price: From €175 per room per night B&B
       roomHighlights:
         - 176 sq feet
         - Kingsize bed with ensuite shower
@@ -99,7 +99,7 @@ rooms:
         - roomImage: /img/casey@2x.jpg
           roomImageAlt: The bed in the Casey room
       roomName: Casey
-    - price: From €170 per room per night B&B (Triple room €210)
+    - price: From €175 per room per night B&B (Triple room €210)
       roomHighlights:
         - 187.5 sq feet
         - Double bed and single bed (twin option)
@@ -113,7 +113,7 @@ rooms:
         - roomImage: /img/IMG_6167.jpg
           roomImageAlt: Bailey and Jackson in the car park
       roomName: Marfagh
-    - price: From €170 per room per night B&B (Triple room €210)
+    - price: From €175 per room per night B&B (Triple room €210)
       roomHighlights:
         - 187.5 sq feet
         - Kingsize bed and single bed (twin option)
