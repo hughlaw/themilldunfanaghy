@@ -16,7 +16,7 @@ introduction:
 
 
     Start the day with our award winning breakfast, relax in our many lounge areas and with our extensive local knowledge, we can show you why we think this hidden corner of Donegal is the best place to be.
-  openingDatesText: We are open from March until November, weekends only during low season.
+  openingDatesText: We are open from March until October, weekends only during low season.
 divider1: /img/new-lake-in-the-mist-large@2x.jpg
 rooms:
   intro1: >-
