@@ -1,7 +1,7 @@
 ---
 pageIdentifier: homepage
 templateKey: index
-splashImage: /img/img_4864-2-.jpg
+splashImage: /img/img_4864-1-.jpg
 alert:
   alertText: ""
   alertTitle: ""
@@ -90,6 +90,7 @@ rooms:
         - roomImage: /img/castlebane@2x.jpg
           roomImageAlt: The bed in the Castlebane room
         - roomImage: /img/img_0032.jpg
+        - roomImage: /img/p1000340.jpg
       roomName: Castlebane
     - price: From €180 per room per night B&B
       roomHighlights:
@@ -100,6 +101,7 @@ rooms:
       roomImages:
         - roomImage: /img/casey@2x.jpg
           roomImageAlt: The bed in the Casey room
+        - roomImage: /img/img_4891-2-.jpg
       roomName: Casey
     - price: From €180 per room per night B&B (Triple room €210)
       roomHighlights:
@@ -199,6 +201,9 @@ gallery:
     galleryImage: /img/DSC_0446.JPG
   - altText: View from front lawn
     galleryImage: /img/IMG_5536.jpg
+  - galleryImage: /img/img_4617.jpg
+  - galleryImage: /img/20180725_145534.jpg
+  - galleryImage: /img/img_6144.jpg
 aboutUs:
   aboutUsText: >-
     We  are no strangers to the hospitality world having spent 20 years creating
