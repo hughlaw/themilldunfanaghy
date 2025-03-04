@@ -1,15 +1,15 @@
 ---
 pageIdentifier: homepage
 templateKey: index
-splashImage: /img/dji_0487.jpg
+splashImage: /img/img_4864-2-.jpg
 alert:
   alertText: ""
   alertTitle: ""
   showAlert: false
 introduction:
   introText: >-
-    The Mill  reached a new chapter in 2020, offering the best place to stay if
-    you want to bridge the gap between a large hotel and a B&B.
+    The Mill  offers the best place to stay if you want to bridge the gap
+    between a large hotel and a B&B. 
 
 
     A home from home, we offer seven individual rooms that range from cosy to cavernous.
@@ -17,7 +17,7 @@ introduction:
 
     Start the day with our award winning breakfast, relax in our many lounge areas and with our extensive local knowledge, we can show you why we think this hidden corner of Donegal is the best place to be.
   openingDatesText: We are open from March until October, weekends only during low season.
-divider1: /img/new-lake-in-the-mist-large@2x.jpg
+divider1: /img/img_6131.jpg
 rooms:
   intro1: >-
     Our rooms at The Mill are named after our local townlands with the exception
@@ -45,7 +45,7 @@ rooms:
     Our dogs are very much part of our life here and so your dog is more than welcome at The Mill. As we have only two doggy friendly rooms please email to book. We allow one dog per room. With notice we will provide walking information, dog water/food bowls,  drying towel, lead and poo bags. Please bring your own bedding . We have a large safe garden for the early morning exercise. We ask you to keep your dog on the lead inside the house and only in the conservatory downstairs.
   intro3subtitle: Doggy Guidelines
   roomInfo:
-    - price: From €195 per room per night B&B
+    - price: From €200 per room per night B&B
       roomHighlights:
         - 396 sq feet
         - Kingsize four poster bed
@@ -58,7 +58,7 @@ rooms:
         - roomImage: /img/studio@2x.jpg
           roomImageAlt: a large room with four poster bed and rolltop bath
       roomName: The Studio
-    - price: From €155 per room per night B&B
+    - price: From €160 per room per night B&B
       roomHighlights:
         - 168 sq feet
         - Double bed with ensuite bath and shower
@@ -67,8 +67,8 @@ rooms:
         - roomImage: /img/figart@2x.jpg
           roomImageAlt: The bed in the Figart room
       roomName: Figart
-      soText: Single occupancy from €120
-    - price: From €155 per room per night B&B
+      soText: Single occupancy from €125
+    - price: From €160 per room per night B&B
       roomHighlights:
         - 137.5 sq feet
         - Double bed with ensuite shower
@@ -76,9 +76,10 @@ rooms:
       roomImages:
         - roomImage: /img/rinclevin@2x.jpg
           roomImageAlt: The bed in the Rinclevin room
+        - roomImage: /img/img_0020.jpg
       roomName: Rinclevin
-      soText: Single occupancy from €120 B&B
-    - price: From €175 per room per night B&B
+      soText: Single occupancy from €125 B&B
+    - price: From €180 per room per night B&B
       roomHighlights:
         - 196 sq feet
         - King size bed
@@ -88,8 +89,9 @@ rooms:
       roomImages:
         - roomImage: /img/castlebane@2x.jpg
           roomImageAlt: The bed in the Castlebane room
+        - roomImage: /img/img_0032.jpg
       roomName: Castlebane
-    - price: From €175 per room per night B&B
+    - price: From €180 per room per night B&B
       roomHighlights:
         - 176 sq feet
         - Kingsize bed with ensuite shower
@@ -99,7 +101,7 @@ rooms:
         - roomImage: /img/casey@2x.jpg
           roomImageAlt: The bed in the Casey room
       roomName: Casey
-    - price: From €175 per room per night B&B (Triple room €210)
+    - price: From €180 per room per night B&B (Triple room €210)
       roomHighlights:
         - 187.5 sq feet
         - Double bed and single bed (twin option)
@@ -113,7 +115,7 @@ rooms:
         - roomImage: /img/IMG_6167.jpg
           roomImageAlt: Bailey and Jackson in the car park
       roomName: Marfagh
-    - price: From €175 per room per night B&B (Triple room €210)
+    - price: From €180 per room per night B&B (Triple room €210)
       roomHighlights:
         - 187.5 sq feet
         - Kingsize bed and single bed (twin option)
@@ -135,7 +137,7 @@ foodAndDrink:
   dividerText2: On a lovely Summer's evening, if you fancy a glass of Prosecco at
     one of our many romantic seating areas in the garden , we do have an Honesty
     Bar for to avail of, offering a selection of fine wines and Donegal Craft
-    Beers . Or of course by the Open fire on cold, wet night.
+    Beers . Or, of course by the Open fire on a cold, wet night.
   foodImage1: /img/img_0857.jpg
   foodImage2: /img/img_1452.jpg
   foodImage3: /img/img_9341.jpg
