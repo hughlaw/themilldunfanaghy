@@ -29,21 +29,25 @@ rooms:
 
 
     From our carefully curated Antiques, Egginton paintings, books and furniture, all our bedrooms are unique.
+
+
+    W﻿e now have an EV charger for our guests to use during their stay.
   intro2: >-
     Of course, they all feature TV's, heavenly mattresses, complimentary wifi
     but its the wee added touches that make the difference.
 
 
-    A welcome drink , complimentary water, wine, homemade oaties for your room and fresh milk when you want it. Our larger rooms also have a Nepresso machine.
+    A welcome drink , complimentary water, wine, homemade oaties for your room and fresh milk when you want it. Our larger rooms also have a Nepresso machine. There is also a fridge in the breakfast room for your use which you can access 24 hours a day.
   intro2subtitle: ""
   intro3: >-
-    We now welcome our canine friends to The Mill.  With such great walks in the
-    area it seems a shame to leave your dog at home which is why we have two
-    rooms where we allow dogs to stay.
+    C﻿anine friends at The Mill.....
+
+
+    We now welcome our canine friends to The Mill.  With such great walks in the area it seems a shame to leave your dog at home which is why we have two rooms where we allow dogs to stay.
 
 
     Our dogs are very much part of our life here and so your dog is more than welcome at The Mill. As we have only two doggy friendly rooms please email to book. We allow one dog per room. With notice we will provide walking information, dog water/food bowls,  drying towel, lead and poo bags. Please bring your own bedding . We have a large safe garden for the early morning exercise. We ask you to keep your dog on the lead inside the house and only in the conservatory downstairs.
-  intro3subtitle: Doggy Guidelines
+  intro3subtitle: ""
   roomInfo:
     - price: From €200 per room per night B&B
       roomHighlights:
