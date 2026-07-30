@@ -1,7 +1,7 @@
 ---
 pageIdentifier: homepage
 templateKey: index
-splashImage: /img/img_4864-1-.jpg
+splashImage: /img/img_0378.jpg
 alert:
   alertText: ""
   alertTitle: ""
