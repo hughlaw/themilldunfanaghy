@@ -72,8 +72,9 @@ rooms:
         - Double bed with ensuite bath and shower
         - Lake view
       roomImages:
-        - roomImage: /img/figart@2x.jpg
-          roomImageAlt: The bed in the Figart room
+        - roomImage: /img/img_9732.jpg
+        - roomImage: /img/img_9736.jpg
+        - roomImage: /img/img_9734.jpg
       roomName: Figart
       soText: Single occupancy from €125
     - price: From €160 per room per night B&B
