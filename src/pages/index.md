@@ -49,7 +49,7 @@ rooms:
     Our dogs are very much part of our life here and so your dog is more than welcome at The Mill. As we have only two doggy friendly rooms please email to book. We allow one dog per room. With notice we will provide walking information, dog water/food bowls,  drying towel, lead and poo bags. Please bring your own bedding . We have a large safe garden for the early morning exercise. We ask you to keep your dog on the lead inside the house and only in the conservatory downstairs.
   intro3subtitle: ""
   roomInfo:
-    - price: From €200 per room per night B&B
+    - price: From €210 per room per night B&B
       roomHighlights:
         - 396 sq feet
         - Kingsize four poster bed
@@ -59,8 +59,12 @@ rooms:
         - Overlooking drive and garden
         - Sitting area
       roomImages:
-        - roomImage: /img/studio@2x.jpg
-          roomImageAlt: a large room with four poster bed and rolltop bath
+        - roomImage: /img/img_9780.jpg
+        - roomImage: /img/img_9778.jpg
+        - roomImage: /img/img_9789.jpg
+        - roomImage: /img/img_9786.jpg
+        - roomImage: /img/img_9785.jpg
+        - roomImage: /img/img_9779.jpg
       roomName: The Studio
     - price: From €160 per room per night B&B
       roomHighlights:
