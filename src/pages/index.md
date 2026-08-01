@@ -17,7 +17,7 @@ introduction:
 
     Start the day with our award winning breakfast, relax in our many lounge areas and with our extensive local knowledge, we can show you why we think this hidden corner of Donegal is the best place to be.
   openingDatesText: We are open from March until October, weekends only during low season.
-divider1: /img/img_6131.jpg
+divider1: /img/img_9942.jpg
 rooms:
   intro1: >-
     Our rooms at The Mill are named after our local townlands with the exception
@@ -153,7 +153,7 @@ foodAndDrink:
     Beers . Or, of course by the Open fire on a cold, wet night.
   foodImage1: /img/img_0035.jpg
   foodImage2: /img/img_1452.jpg
-  foodImage3: /img/d0d53a52-e43b-4424-b994-9368d64803b2-1-.jpg
+  foodImage3: /img/img_0294.jpg
   menuItems:
     - description: McGettigan's Pork Sausages ,  Home Cured Bacon and Black and White
         pudding,  Free Range Fried Egg, Potato Bread, Tomato & Mushrooms.
