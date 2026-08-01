@@ -66,7 +66,7 @@ rooms:
         - roomImage: /img/img_9785.jpg
         - roomImage: /img/img_9779.jpg
       roomName: The Studio
-    - price: From €160 per room per night B&B
+    - price: From €165 per room per night B&B
       roomHighlights:
         - 168 sq feet
         - Double bed with ensuite bath and shower
@@ -77,8 +77,8 @@ rooms:
         - roomImage: /img/img_9734.jpg
         - roomImage: /img/img_9735.jpg
       roomName: Figart
-      soText: Single occupancy from €125
-    - price: From €160 per room per night B&B
+      soText: Single occupancy from €130
+    - price: From €165 per room per night B&B
       roomHighlights:
         - 137.5 sq feet
         - Double bed with ensuite shower
@@ -89,7 +89,7 @@ rooms:
         - roomImage: /img/img_9743.jpg
         - roomImage: /img/img_9744.jpg
       roomName: Rinclevin
-      soText: Single occupancy from €125 B&B
+      soText: Single occupancy from €130 B&B
     - price: From €180 per room per night B&B
       roomHighlights:
         - 196 sq feet
@@ -103,16 +103,16 @@ rooms:
         - roomImage: /img/img_0032.jpg
         - roomImage: /img/p1000340.jpg
       roomName: Castlebane
-    - price: From €180 per room per night B&B
+    - price: From €185 per room per night B&B
       roomHighlights:
         - 176 sq feet
         - Kingsize bed with ensuite shower
         - Lake view
         - Nespresso coffee machine
       roomImages:
-        - roomImage: /img/casey@2x.jpg
-          roomImageAlt: The bed in the Casey room
-        - roomImage: /img/img_4891-2-.jpg
+        - roomImage: /img/img_9745.jpg
+        - roomImage: /img/img_9747.jpg
+        - roomImage: /img/img_9749.jpg
       roomName: Casey
     - price: From €180 per room per night B&B (Triple room €210)
       roomHighlights:
