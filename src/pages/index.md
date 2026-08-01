@@ -37,7 +37,7 @@ rooms:
     but its the wee added touches that make the difference.
 
 
-    A welcome drink , complimentary water, wine, homemade oaties for your room and fresh milk when you want it. Our larger rooms also have a Nepresso machine. There is also a fridge in the breakfast room for your use which you can access 24 hours a day.
+    A welcome drink , complimentary water,  homemade oaties for your room and fresh milk . Our larger rooms also have a Nepresso machine. There is also a fridge in the breakfast room for your use which you can access 24 hours a day.
   intro2subtitle: ""
   intro3: >-
     C﻿anine friends at The Mill.....
@@ -84,9 +84,10 @@ rooms:
         - Double bed with ensuite shower
         - Lake view
       roomImages:
-        - roomImage: /img/rinclevin@2x.jpg
-          roomImageAlt: The bed in the Rinclevin room
-        - roomImage: /img/img_0020.jpg
+        - roomImage: /img/img_9741.jpg
+        - roomImage: /img/img_9739.jpg
+        - roomImage: /img/img_9743.jpg
+        - roomImage: /img/img_9744.jpg
       roomName: Rinclevin
       soText: Single occupancy from €125 B&B
     - price: From €180 per room per night B&B
