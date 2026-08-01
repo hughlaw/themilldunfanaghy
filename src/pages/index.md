@@ -151,7 +151,7 @@ foodAndDrink:
     one of our many romantic seating areas in the garden , we do have an Honesty
     Bar for to avail of, offering a selection of fine wines and Donegal Craft
     Beers . Or, of course by the Open fire on a cold, wet night.
-  foodImage1: /img/img_0857.jpg
+  foodImage1: /img/img_0035.jpg
   foodImage2: /img/img_1452.jpg
   foodImage3: /img/d0d53a52-e43b-4424-b994-9368d64803b2-1-.jpg
   menuItems:
@@ -183,7 +183,7 @@ foodAndDrink:
     the New Lake, served from 8.30am - 10 am.
 
 
-    You will find a wide choice of cereal, delicious Fruit salad, Natural yogurt, Carrageen Moss, Garden Rhubarb, Prunes, Homemade breads ,  juices and much more.
+    You will find a wide choice of cereal, delicious Fruit salad, Natural yogurt, Carrageen Moss, Garden Rhubarb, Prunes, Homemade bread ,  juices and much more.
   title: Food & drink
 experiences:
   dividerExperiences: /img/boats-on-the-new-lake-large@2x.jpg
