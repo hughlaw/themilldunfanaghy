@@ -151,13 +151,12 @@ rooms:
       roomName: Corgannive
   title: Our rooms
 foodAndDrink:
-  dividerText1: For a more hearty start to the day, a vast range that includes a
+  dividerText1: You will find a wide choice of cereal, delicious Fruit salad,
+    Natural yogurt, Carrageen Moss, Garden Rhubarb, Prunes, Homemade bread
+    ,  juices and much more.
+  dividerText2: For a more hearty start to the day, a vast range that includes a
     Full Irish Breakfast, Vegetarian breakfast, Egg's Benedict ( Mill style!) ,
     Smoked salmon, Egg dishes and Smoked fish  can be ordered from the kitchen.
-  dividerText2: On a lovely Summer's evening, if you fancy a glass of Prosecco at
-    one of our many romantic seating areas in the garden , we do have an Honesty
-    Bar for to avail of, offering a selection of fine wines and Donegal Craft
-    Beers . Or, of course by the Open fire on a cold, wet night.
   foodImage1: /img/img_0035.jpg
   foodImage2: /img/img_1452.jpg
   foodImage3: /img/img_0294.jpg
@@ -170,7 +169,7 @@ foodAndDrink:
     - description: Tomato, Beans, Vegetarian pudding, Fried Organic Egg, Mushrooms &
         Potato Bread.
       title: Vegetarian Breakfast
-    - description: Served with with crispy Bacon & Maple Syrup.
+    - description: Served  with crispy bacon or berries & Maple Syrup.
       title: Pancakes
     - title: Poached Egg with Smoked Fish
     - description: Served with Bacon, Mushroom or Tomato.
@@ -184,13 +183,9 @@ foodAndDrink:
       title: Eggs Royale
     - description: Poached Eggs, Mozzarella, Sliced Tomato & Hollandaise Sauce.
       title: Caprese Eggs Benedict
-  openingText: >-
-    A very relaxed breakfast is truly the perfect way to start the day. Our
-    award winning breakfast is served in our split level dining room overlooking
-    the New Lake, served from 8.30am - 10 am.
-
-
-    You will find a wide choice of cereal, delicious Fruit salad, Natural yogurt, Carrageen Moss, Garden Rhubarb, Prunes, Homemade bread ,  juices and much more.
+  openingText: A very relaxed breakfast is truly the perfect way to start the day.
+    Our award winning breakfast is served in our split level dining room
+    overlooking the New Lake, served from 8.30am - 10 am.
   title: Food & drink
 experiences:
   dividerExperiences: /img/boats-on-the-new-lake-large@2x.jpg
@@ -209,19 +204,6 @@ experiences:
 gallery:
   - altText: 2 golden retriever dogs on the beach
     galleryImage: /img/dogs-on-the-beach-large@2x.jpg
-  - altText: The sun setting over new lake
-    galleryImage: /img/new-lake-at-sunset-large@2x.jpg
-  - altText: A view of Muckish mountain on a cold winters day
-    galleryImage: /img/muckish-in-the-winter-large@2x.jpg
-  - altText: Killyhoey Beach from Horn Head
-    galleryImage: /img/DSC_0531.JPG
-  - altText: The New Lake, Dunfanaghy
-    galleryImage: /img/DSC_0446.JPG
-  - altText: View from front lawn
-    galleryImage: /img/IMG_5536.jpg
-  - galleryImage: /img/img_4617.jpg
-  - galleryImage: /img/20180725_145534.jpg
-  - galleryImage: /img/img_6144.jpg
 aboutUs:
   aboutUsText: >-
     We  are no strangers to the hospitality world having spent 20 years creating
