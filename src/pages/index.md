@@ -43,10 +43,10 @@ rooms:
     C﻿anine friends at The Mill.....
 
 
-    We now welcome our canine friends to The Mill.  With such great walks in the area it seems a shame to leave your dog at home which is why we have two rooms where we allow dogs to stay.
+    We welcome our canine friends to The Mill.  With such great walks in the area it seems a shame to leave your dog at home which is why we have two rooms where we allow dogs to stay.
 
 
-    Our dogs are very much part of our life here and so your dog is more than welcome at The Mill. As we have only two doggy friendly rooms please email to book. We allow one dog per room. With notice we will provide walking information, dog water/food bowls,  drying towel, lead and poo bags. Please bring your own bedding . We have a large safe garden for the early morning exercise. We ask you to keep your dog on the lead inside the house and only in the conservatory downstairs.
+    Our dogs are very much part of our life here and so your dog is more than welcome at The Mill. As we have only two doggy friendly rooms please email to book. We allow one dog per room. . We have a large safe garden for the early morning exercise. We ask you to keep your dog on the lead inside the house and only in the conservatory downstairs.
   intro3subtitle: ""
   roomInfo:
     - price: From €210 per room per night B&B
@@ -90,7 +90,7 @@ rooms:
         - roomImage: /img/img_9744.jpg
       roomName: Rinclevin
       soText: Single occupancy from €130 B&B
-    - price: From €180 per room per night B&B
+    - price: From €185 per room per night B&B
       roomHighlights:
         - 196 sq feet
         - King size bed
@@ -98,10 +98,12 @@ rooms:
         - Lake view
         - Nespresso coffee machine
       roomImages:
-        - roomImage: /img/castlebane@2x.jpg
+        - roomImage: /img/img_9756.jpg
           roomImageAlt: The bed in the Castlebane room
-        - roomImage: /img/img_0032.jpg
-        - roomImage: /img/p1000340.jpg
+        - roomImage: /img/img_9753.jpg
+        - roomImage: /img/img_9755.jpg
+        - roomImage: /img/img_9757.jpg
+        - roomImage: /img/img_9759.jpg
       roomName: Castlebane
     - price: From €185 per room per night B&B
       roomHighlights:
@@ -114,7 +116,7 @@ rooms:
         - roomImage: /img/img_9747.jpg
         - roomImage: /img/img_9749.jpg
       roomName: Casey
-    - price: From €180 per room per night B&B (Triple room €210)
+    - price: "From €185 per room per night B&B "
       roomHighlights:
         - 187.5 sq feet
         - Double bed and single bed (twin option)
@@ -123,12 +125,13 @@ rooms:
         - Nespresso coffee machine
         - Dog Friendly room.
       roomImages:
-        - roomImage: /img/marfagh@2x.jpg
-          roomImageAlt: The bed in the Marfagh room
-        - roomImage: /img/IMG_6167.jpg
-          roomImageAlt: Bailey and Jackson in the car park
+        - roomImage: /img/img_9771.jpg
+        - roomImage: /img/img_9770.jpg
+        - roomImage: /img/img_9772.jpg
+        - roomImage: /img/img_9775.jpg
+        - roomImage: /img/img_9774.jpg
       roomName: Marfagh
-    - price: From €180 per room per night B&B (Triple room €210)
+    - price: "From €185 per room per night B&B "
       roomHighlights:
         - 187.5 sq feet
         - Kingsize bed and single bed (twin option)
@@ -137,10 +140,14 @@ rooms:
         - Nespresso coffee machine
         - Dog Friendly room
       roomImages:
-        - roomImage: /img/corgannive@2x.jpg
+        - roomImage: /img/img_0492.jpg
           roomImageAlt: The bed in the Corgannive room
-        - roomImage: /img/image1 (2) - Copy.jpeg
-          roomImageAlt: Bailey, our Golden Retriever,  in Corgannive.
+        - roomImage: /img/img_0495.jpg
+          roomImageAlt: ""
+        - roomImage: /img/img_0496.jpg
+        - roomImage: /img/img_0499.jpg
+        - roomImage: /img/img_0493.jpg
+        - roomImage: /img/img_0498.jpg
       roomName: Corgannive
   title: Our rooms
 foodAndDrink:
