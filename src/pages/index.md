@@ -127,8 +127,7 @@ rooms:
       roomImages:
         - roomImage: /img/img_9771.jpg
         - roomImage: /img/img_9770.jpg
-        - roomImage: /img/img_9772.jpg
-        - roomImage: /img/img_9775.jpg
+        - roomImage: /img/img_9773.jpg
         - roomImage: /img/img_9774.jpg
       roomName: Marfagh
     - price: "From €185 per room per night B&B "
@@ -204,6 +203,18 @@ experiences:
 gallery:
   - altText: 2 golden retriever dogs on the beach
     galleryImage: /img/dogs-on-the-beach-large@2x.jpg
+  - galleryImage: /img/img_9551.jpg
+  - galleryImage: /img/img_9546.jpg
+  - galleryImage: /img/img_9590.jpg
+  - galleryImage: /img/img_9596.jpg
+  - galleryImage: /img/3c998a5e-7d72-4c43-a42a-ccdc8d8a2c71.jpg
+  - galleryImage: /img/img_9587.jpg
+  - galleryImage: /img/img_9512.jpg
+  - galleryImage: /img/img_9994.jpg
+  - galleryImage: /img/img_0073.jpg
+  - galleryImage: /img/img_9509.jpg
+  - galleryImage: /img/img_0047.jpg
+  - galleryImage: /img/img_9589.jpg
 aboutUs:
   aboutUsText: >-
     We  are no strangers to the hospitality world having spent 20 years creating
@@ -223,8 +234,8 @@ aboutUs:
     Work began in 1999 to modernise and enlarge the house to accommodate a restaurant, 6 ensuite rooms and a living area. In 2001 another room,  The Studio, was added.
 
 
-    Our new chapter begins in 2020.
-  profileImage: /img/dji_0487.jpg
+    Our new chapter began in 2020.
+  profileImage: /img/img_4617.jpg
   title: About us
   title2: The story of The Mill
 "footer,":
@@ -233,4 +244,6 @@ aboutUs:
     - awardImage: /img/Failte-Ireland-Logo.jpg
     - awardImage: /img/georgina.png
     - awardImage: /img/dji_0501.jpg
+    - awardImage: /img/gc-plaque-2024.png
+    - awardImage: /img/mkg-plaque-2026-1-.png
 ---
