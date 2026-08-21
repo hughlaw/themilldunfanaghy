@@ -40,6 +40,10 @@ rooms:
     A welcome drink , complimentary water,  homemade oaties for your room and fresh milk . Our larger rooms also have a Nepresso machine. There is also a fridge in the breakfast room for your use which you can access 24 hours a day.
   intro2subtitle: ""
   intro3: >-
+    
+
+
+
     C﻿anine friends at The Mill.....
 
 
@@ -128,7 +132,6 @@ rooms:
         - roomImage: /img/img_9771.jpg
         - roomImage: /img/img_9770.jpg
         - roomImage: /img/img_9773.jpg
-        - roomImage: /img/img_9774.jpg
       roomName: Marfagh
     - price: "From €185 per room per night B&B "
       roomHighlights:
@@ -219,7 +222,9 @@ aboutUs:
   aboutUsText: >-
     We  are no strangers to the hospitality world having spent 20 years creating
     and running our award winning restaurant with rooms. We have now turned our
-    attention to providing a very special place to stay.
+    attention to providing a very special place to stay. We were delighted to
+    recently receive the 'Small Stay' Award at Georgina Campbell's Irish Food &
+    Hospitality Awards 2025. 
 
 
     With so much on offer on our doorstep we hope you love this area as much as we do.
