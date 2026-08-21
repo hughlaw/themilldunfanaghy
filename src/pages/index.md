@@ -127,7 +127,6 @@ rooms:
         - Ensuite bath and shower
         - Overlooking trees
         - Nespresso coffee machine
-        - Dog Friendly room.
       roomImages:
         - roomImage: /img/img_9771.jpg
         - roomImage: /img/img_9770.jpg
@@ -140,7 +139,6 @@ rooms:
         - Ensuite bath and shower
         - Overlooking the trees
         - Nespresso coffee machine
-        - Dog Friendly room
       roomImages:
         - roomImage: /img/img_0492.jpg
           roomImageAlt: The bed in the Corgannive room
